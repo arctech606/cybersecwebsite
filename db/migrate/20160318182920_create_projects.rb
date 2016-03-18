@@ -4,7 +4,8 @@ class CreateProjects < ActiveRecord::Migration
       t.string :name
       t.string :sponsor
       t.text :desc
-
+      t.references :faculty
+      t.references :student
       t.timestamps null: false
     end
   end
