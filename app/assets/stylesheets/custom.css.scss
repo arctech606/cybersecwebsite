@@ -1,0 +1,21 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+body {
+  padding-top: 60px;
+}
+
+section {
+  overflow: auto;
+}
+
+.container-fluid h1{
+  color:white;
+}
+.nav{
+  width:100%;
+  background-color:#3c3c3c;
+}
+.Directors_message{
+  position:relative;
+  top:100px;
+}

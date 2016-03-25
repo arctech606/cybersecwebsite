@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'homepage/index'
+  root 'homepage#index'
 
   resources :faculties
   # The priority is based upon order of creation: first created -> highest priority.
