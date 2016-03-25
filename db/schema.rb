@@ -11,12 +11,25 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160318183043) do
+ActiveRecord::Schema.define(version: 20160325233517) do
+
+  create_table "events", force: :cascade do |t|
+    t.string   "name"
+    t.string   "date"
+    t.text     "desc"
+    t.text     "venue"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "faculties", force: :cascade do |t|
     t.string   "name"
     t.string   "dept"
     t.text     "desc"
+    t.text     "office"
+    t.string   "phone_no"
+    t.string   "email"
+    t.integer  "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -31,6 +44,7 @@ ActiveRecord::Schema.define(version: 20160318183043) do
     t.string   "sponsor"
     t.text     "desc"
     t.integer  "faculty_id"
+    t.integer  "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -39,6 +53,8 @@ ActiveRecord::Schema.define(version: 20160318183043) do
     t.string   "name"
     t.text     "abstract"
     t.string   "keywords"
+    t.integer  "faculty_id"
+    t.integer  "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
