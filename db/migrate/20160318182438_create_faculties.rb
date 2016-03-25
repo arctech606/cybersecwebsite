@@ -4,6 +4,9 @@ class CreateFaculties < ActiveRecord::Migration
       t.string :name
       t.string :dept
       t.text :desc
+      t.text :office
+      t.string :phone_no
+      t.string :email
       t.references :student
       t.timestamps null: false
     end
