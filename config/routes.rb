@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+  resources :educations
   resources :events
   resources :publications
 
