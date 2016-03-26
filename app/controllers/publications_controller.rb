@@ -6,11 +6,12 @@ class PublicationsController < ApplicationController
   def index
     
     
-    @publications = Publication.order(:name)
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @publications }
-    end
+    @publications = Publication.order(params[:name])
+    @publications = Publication.search(params[:search])
+    #respond_to do |format|
+     # format.html # index.html.erb
+    #  format.json { render json: @publications }
+    #end
     #redirect_to publications_path
   end
   

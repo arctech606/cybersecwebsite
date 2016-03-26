@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>Listing Publications</h1>
+
 <%=link_to "Sort by name",{:controller => 'publications'  }%>
 <table>
   <thead>
@@ -33,3 +34,9 @@
 <br>
 
 <%= link_to 'New Publication', new_publication_path %>
+<%= form_tag publications_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag "Search", :name => nil %>
+  </p>
+<% end %>
