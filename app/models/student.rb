@@ -1,4 +1,5 @@
 class Student < ActiveRecord::Base
+ validates :name, :dept, :desc, :projects, :publications, :research_interests, :faculties, presence: { :message => "data not present" }
   has_many :projects
   has_many :publications
   has_many :research_interests

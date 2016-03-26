@@ -1,4 +1,5 @@
 class CreateFaculties < ActiveRecord::Migration
+   
   def change
     create_table :faculties do |t|
       t.string :name
@@ -7,7 +8,11 @@ class CreateFaculties < ActiveRecord::Migration
       t.text :office
       t.string :phone_no
       t.string :email
+      t.references :research_interest
+      t.references :project
       t.references :student
+      t.references :publication
+      
       t.timestamps null: false
     end
   end

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160326000952) do
+ActiveRecord::Schema.define(version: 20160326002944) do
 
   create_table "educations", force: :cascade do |t|
     t.string   "courses_offered"
@@ -37,14 +37,17 @@ ActiveRecord::Schema.define(version: 20160326000952) do
     t.text     "office"
     t.string   "phone_no"
     t.string   "email"
+    t.integer  "research_interest_id"
+    t.integer  "project_id"
     t.integer  "student_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.integer  "publication_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
-  create_table "faculties_students", id: false, force: :cascade do |t|
-    t.integer "faculty_id", null: false
-    t.integer "student_id", null: false
+  create_table "faculties_students", force: :cascade do |t|
+    t.integer "faculty_id"
+    t.integer "student_id"
   end
 
   create_table "projects", force: :cascade do |t|
@@ -79,8 +82,12 @@ ActiveRecord::Schema.define(version: 20160326000952) do
     t.string   "name"
     t.string   "dept"
     t.text     "desc"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.integer  "research_interest_id"
+    t.integer  "project_id"
+    t.integer  "faculty_id"
+    t.integer  "publication_id"
   end
 
 end
