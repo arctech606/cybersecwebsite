@@ -4,9 +4,19 @@ class PublicationsController < ApplicationController
   # GET /publications
   # GET /publications.json
   def index
-    @publications = Publication.all
+    
+    
+    @publications = Publication.order(:name)
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: @publications }
+    end
+    #redirect_to publications_path
   end
-
+  
+  def sort_by_name
+   
+  end
   # GET /publications/1
   # GET /publications/1.json
   def show
