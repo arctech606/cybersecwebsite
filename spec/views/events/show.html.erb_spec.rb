@@ -6,7 +6,7 @@ RSpec.describe "events/show", type: :view do
       :name => "Name",
       :date => "Date",
       :desc => "MyText",
-      :venue => "MyText"
+      :venue => "MyText1"
     ))
   end
 
@@ -15,6 +15,6 @@ RSpec.describe "events/show", type: :view do
     expect(rendered).to match(/Name/)
     expect(rendered).to match(/Date/)
     expect(rendered).to match(/MyText/)
-    expect(rendered).to match(/MyText/)
+    expect(rendered).to match(/MyText1/)
   end
 end
