@@ -20,5 +20,5 @@ Scenario: Search Publications
   Given I am on the "Publications" page
   When I fill "search" with "Lucas"
   And I click "Search" Button
-  Then I must be directed to the "Publications" page
-  And I should see "Pravir" and "Shweta"
+  Then I must be directed to the "Publications" page for the "Lucas" Query
+  And I should not see "Shweta" and "Shweta"

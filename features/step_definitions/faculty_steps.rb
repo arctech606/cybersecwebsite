@@ -12,6 +12,9 @@ When(/^I click on the "([^"]*)" Link on the Navigation Bar$/) do |arg1|
   if ($1 == 'Research')
     click_link('Research')
   end
+  if ($1=='Events')
+    click_link('Research')
+  end
 end
 
 Then(/^I must be directed to the "([^"]*)" page$/) do |arg1|
@@ -20,6 +23,9 @@ Then(/^I must be directed to the "([^"]*)" page$/) do |arg1|
   end# Write code here that turns the phrase above into concrete actions
   if arg1=='Publications'
     visit(publications_path)
+  end
+  if arg1=='Events'
+    visit(events_path)
   end
 end
 Then(/^I should see "([^"]*)","([^"]*)","([^"]*)","([^"]*)"$/) do |arg1, arg2, arg3, arg4|

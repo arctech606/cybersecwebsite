@@ -22,3 +22,9 @@ end
 When(/^I click "([^"]*)" Button$/) do |arg1|
   click_button(arg1)
 end
+
+Then(/^I must be directed to the "([^"]*)" page for the "([^"]*)" Query$/) do |arg1, arg2|
+  if $1=='Publications'
+  visit("/publications?utf8=✓&search=#{arg2}")
+  end
+end
