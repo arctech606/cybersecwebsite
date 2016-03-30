@@ -38,7 +38,7 @@ group :development, :test do
   gem 'byebug'
   
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  gem 'pg'
 
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
