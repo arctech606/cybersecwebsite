@@ -19,6 +19,9 @@ module NavigationHelpers
       if $1 =='Faculty'
         faculties_path
       end
+      if $1== 'Publications'
+        publications_path
+      end
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

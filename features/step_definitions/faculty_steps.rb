@@ -9,12 +9,18 @@ When(/^I click on the "([^"]*)" Link on the Navigation Bar$/) do |arg1|
   if ($1 == 'Find faculty experts') # Write code here that turns the phrase above into concrete actions
     click_link('Find faculty experts')
   end
+  if ($1 == 'Research')
+    click_link('Research')
+  end
 end
 
 Then(/^I must be directed to the "([^"]*)" page$/) do |arg1|
   if arg1=='Faculties'
     visit(faculties_path)
   end# Write code here that turns the phrase above into concrete actions
+  if arg1=='Publications'
+    visit(publications_path)
+  end
 end
 Then(/^I should see "([^"]*)","([^"]*)","([^"]*)","([^"]*)"$/) do |arg1, arg2, arg3, arg4|
   page.should have_content(arg1)# Write code here that turns the phrase above into concrete actions
