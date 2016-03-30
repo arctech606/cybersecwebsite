@@ -5,190 +5,198 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-pub0= Publication.create(:name=> "Behavior instance extraction for risk aware control in mission centric systems", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub1= Publication.create(:name=> "Bit errors in the Kirchhoff Law–Johnson Noise secure key exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub2= Publication.create(:name=> "Cable Capacitance Attack against the KLJN Secure Key Exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub3= Publication.create(:name=> "Current and voltage based bit errors and their combined mitigation for the Kirchhoff law–Johnson noise secure key exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub4= Publication.create(:name=> "Current Injection Attack against the KLJN Secure Key Exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub5= Publication.create(:name=> "The Deep Web and the Darknet: A Look Inside the Internet's Massive Black Box", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub6= Publication.create(:name=> "Detecting Spam URLs in Social Media via Behavioral Analysis", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub7= Publication.create(:name=> "Elimination of a Second Law attack, and all cable resistance based attacks, in the Kirchhoff law Johnson noise (KLJN) secure key exchange system", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub8= Publication.create(:name=> "Enhanced secure key exchange systems based on the Johnson noise scheme", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub9= Publication.create(:name=> "Enhanced usage of keys obtained by physical, unconditionally secure distributions", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub10= Publication.create(:name=> "Errors and their mitigation at the Kirchhoff law Johnson noise secure key exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub11= Publication.create(:name=> "Facts, myths and fights about the KLJN classical physical key exchanger", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub12= Publication.create(:name=> "Fastplay A Parallelization Model and Implementation of Secure Multiparty Computation (SMC) on CUDA based GPU Cluster Architecture", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub13= Publication.create(:name=> "A First Step Toward Network Security Virtualization: From Concept To Prototype", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub14= Publication.create(:name=> "GOLDENEYE: Efficiently and Effectively Unveiling Malware’s Targeted Environment", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub15= Publication.create(:name=> "Identity, Privacy, and Deception in Social Networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub16= Publication.create(:name=> "Impact analysis of transient stability due to cyber attack on Flexible Alternating Current Transmission System (FACTS) devices", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub17= Publication.create(:name=> "Information theoretic security by the laws of classical physics", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub18= Publication.create(:name=> "Information theoretically secure, enhanced Johnson noise based key distribution over the smart grid with switched filters", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub19= Publication.create(:name=> "Key Exchange Trust Evaluation in Peer to Peer Sensor Networks with Unconditionally Secure Key Exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub20= Publication.create(:name=> "Model checking invariant security properties in OpenFlow", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub21= Publication.create(:name=> "On KLJN based Secure Key Distribution in Vehicular Communication Networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub22= Publication.create(:name=> "On secure communication with known interference", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub23= Publication.create(:name=> "On the security of the Kirchhoff law–Johnson noise (KLJN) communicator", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub24= Publication.create(:name=> "Permission Use Analysis for Vetting Undesirable Behaviors in Android Apps", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub25= Publication.create(:name=> "Physical Unclonable Function Hardware Keys Utilizing Kirchhoff Law Johnson Noise Secure Key Exchange and Noise Based Logic", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub26= Publication.create(:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub27= Publication.create(:name=> "Reliable, deniable and hidable communication: A quick survey", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub28= Publication.create(:name=> "Reliable, deniable, and hidable communication over multipath networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub29= Publication.create(:name=> "Resource requirements and speed versus geometry of unconditionally secure physical key exchanges", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub30= Publication.create(:name=> "SAPPHIRE: Anonymity for enhanced control and private collaboration in healthcare clouds", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub31= Publication.create(:name=> "Secrecy Capacity per Unit Cost", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub32= Publication.create(:name=> "Secret writing on dirty paper: A deterministic view", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub33= Publication.create(:name=> "Securing vehicle communication systems by the kljn key exchange protocol", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub34= Publication.create(:name=> "Subversion Impedance in Covert Communication Networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub35= Publication.create(:name=> "Switched system models for coordinated cyber physical attack construction and simulation", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub36= Publication.create(:name=> "Topology Construction of Near Optimal Covert Communications Networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub37= Publication.create(:name=> "Unconditional security for the smart power grids and star networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub38= Publication.create(:name=> "Vetting undesirable behaviors in android apps with permission use analysis", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub39= Publication.create(:name=> "Visual Sensor Network Processing and Preventative Steganalysis", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub40= Publication.create(:name=> "VulHunter: Toward Discovering Vulnerabilities in Android Applications", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub41= Publication.create(:name=> "Weakly secure regenerating codes for distributed storage", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality")
-pub42= Publication.create(:name=> "Avant guard: Scalable and vigilant switch flow management in software-defined networks", :abstract=>"xyz",:keywords=>"Architecture")
-pub43= Publication.create(:name=> "Bloom filter based intrusion detection for smart grid SCADA", :abstract=>"xyz",:keywords=>"Architecture")
-pub44= Publication.create(:name=> "A class of cyber physical switching attacks for power system disruption", :abstract=>"xyz",:keywords=>"Architecture")
-pub45= Publication.create(:name=> "A coordinated multi switch attack for cascading failures in smart grid", :abstract=>"xyz",:keywords=>"Architecture")
-pub46= Publication.create(:name=> "Coordinated variable structure switching attack in the presence of model error and state estimation", :abstract=>"xyz",:keywords=>"Architecture")
-pub47= Publication.create(:name=> "Coordinated variable structure switching in smart power systems: Attacks and mitigation", :abstract=>"xyz",:keywords=>"Architecture")
-pub48= Publication.create(:name=> "Eliminating network protocol vulnerabilities through abstraction and systems language design", :abstract=>"xyz",:keywords=>"Architecture")
-pub49= Publication.create(:name=> "Fastplay A Parallelization Model and Implementation of Secure Multiparty Computation (SMC) on CUDA based GPU Cluster Architecture", :abstract=>"xyz",:keywords=>"Architecture")
-pub50= Publication.create(:name=> "A First Step Toward Network Security Virtualization: From Concept To Prototype", :abstract=>"xyz",:keywords=>"Architecture")
-pub51= Publication.create(:name=> "A Framework for Modeling Cyber Physical Switching Attacks in Smart Grid", :abstract=>"xyz",:keywords=>"Architecture")
-pub52= Publication.create(:name=> "FRESCO: Modular Composable Security Services for Software Defined Networks", :abstract=>"xyz",:keywords=>"Architecture")
-pub53= Publication.create(:name=> "Impact analysis of transient stability due to cyber attack on Flexible Alternating Current Transmission System (FACTS) devices", :abstract=>"xyz",:keywords=>"Architecture")
-pub54= Publication.create(:name=> "Impact of cyber attacks on transient stability of smart grids with voltage support devices", :abstract=>"xyz",:keywords=>"Architecture")
-pub55= Publication.create(:name=> "Implementing attacks for modbus/TCP protocol in a real time cyber physical system test bed", :abstract=>"xyz",:keywords=>"Architecture")
-pub56= Publication.create(:name=> "Information theoretically secure, enhanced Johnson noise based key distribution over the smart grid with switched filters", :abstract=>"xyz",:keywords=>"Architecture")
-pub57= Publication.create(:name=> "Model checking invariant security properties in OpenFlow", :abstract=>"xyz",:keywords=>"Architecture")
-pub58= Publication.create(:name=> "Of guard: A DoS Attack Prevention Extension in Software defined Networks", :abstract=>"xyz",:keywords=>"Architecture")
-pub59= Publication.create(:name=> "Poisoning Network Visibility in Software Defined Networks: New Attacks and Countermeasures", :abstract=>"xyz",:keywords=>"Architecture")
-pub60= Publication.create(:name=> "Ramp Induced Data Attacks on Look Ahead Dispatch in Real Time Power Markets", :abstract=>"xyz",:keywords=>"Architecture")
-pub61= Publication.create(:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Architecture")
-pub62= Publication.create(:name=> "Reliable, deniable, and hidable communication over multipath networks", :abstract=>"xyz",:keywords=>"Architecture")
-pub63= Publication.create(:name=> "SAPPHIRE: Anonymity for enhanced control and private collaboration in healthcare clouds", :abstract=>"xyz",:keywords=>"Architecture")
-pub64= Publication.create(:name=> "Securing vehicle communication systems by the kljn key exchange protocol", :abstract=>"xyz",:keywords=>"Architecture")
-pub65= Publication.create(:name=> "A security enforcement kernel for OpenFlow networks", :abstract=>"xyz",:keywords=>"Architecture")
-pub66= Publication.create(:name=> "Sensitivity Analysis of Real Time Locational Marginal Price to SCADA Sensor Data Corruption", :abstract=>"xyz",:keywords=>"Architecture")
-pub67= Publication.create(:name=> "A smart grid vulnerability analysis framework for coordinated variable structure switching attacks", :abstract=>"xyz",:keywords=>"Architecture")
-pub68= Publication.create(:name=> "SRID: State Relation Based Intrusion Detection for False Data Injection Attacks in SCADA", :abstract=>"xyz",:keywords=>"Architecture")
-pub69= Publication.create(:name=> "Switched system models for coordinated cyber physical attack construction and simulation", :abstract=>"xyz",:keywords=>"Architecture")
-pub70= Publication.create(:name=> "Topology Construction of Near Optimal Covert Communications Networks", :abstract=>"xyz",:keywords=>"Architecture")
-pub71= Publication.create(:name=> "Towards a framework for cyber attack impact analysis of the electric smart grid", :abstract=>"xyz",:keywords=>"Architecture")
-pub72= Publication.create(:name=> "Unconditional security for the smart power grids and star networks", :abstract=>"xyz",:keywords=>"Architecture")
-pub73= Publication.create(:name=> "Model checking invariant security properties in OpenFlow", :abstract=>"xyz",:keywords=>"Assurance")
-pub74= Publication.create(:name=> "Attacking software defined networks: A first feasibility study", :abstract=>"xyz",:keywords=>"Operations")
-pub75= Publication.create(:name=> "AutoProbe: Towards Automatic Active Malicious Server Probing Using Dynamic Binary Analysis", :abstract=>"xyz",:keywords=>"Operations")
-pub76= Publication.create(:name=> "Avant guard: Scalable and vigilant switch flow management in software defined networks", :abstract=>"xyz",:keywords=>"Operations")
-pub77= Publication.create(:name=> "Behavior instance extraction for risk aware control in mission centric systems", :abstract=>"xyz",:keywords=>"Operations")
-pub78= Publication.create(:name=> "Bloom filter based intrusion detection for smart grid SCADA", :abstract=>"xyz",:keywords=>"Operations")
-pub79= Publication.create(:name=> "Cable Capacitance Attack against the KLJN Secure Key Exchange", :abstract=>"xyz",:keywords=>"Operations")
-pub80= Publication.create(:name=> "CATS: Characterizing automation of Twitter spammers", :abstract=>"xyz",:keywords=>"Operations")
-pub81= Publication.create(:name=> "A class of cyber physical switching attacks for power system disruption", :abstract=>"xyz",:keywords=>"Operations")
-pub82= Publication.create(:name=> "CloudWatcher: Network security monitoring using OpenFlow in dynamic cloud networks (or: How to provide security monitoring as a service in clouds?)", :abstract=>"xyz",:keywords=>"Operations")
-pub83= Publication.create(:name=> "Content driven detection of campaigns in social media", :abstract=>"xyz",:keywords=>"Operations")
-pub84= Publication.create(:name=> "A coordinated multi switch attack for cascading failures in smart grid", :abstract=>"xyz",:keywords=>"Operations")
-pub85= Publication.create(:name=> "Coordinated variable structure switching attack in the presence of model error and state estimation", :abstract=>"xyz",:keywords=>"Operations")
-pub86= Publication.create(:name=> "Coordinated variable structure switching in smart power systems: Attacks and mitigation", :abstract=>"xyz",:keywords=>"Operations")
-pub87= Publication.create(:name=> "Crowdturfers, Campaigns, and Social Media: Tracking and Revealing Crowdsourced Manipulation of Social Media", :abstract=>"xyz",:keywords=>"Operations")
-pub88= Publication.create(:name=> "Cyberprobe: Towards internet scale active detection of malicious servers", :abstract=>"xyz",:keywords=>"Operations")
-pub89= Publication.create(:name=> "Detecting algorithmically generated domain flux attacks with DNS traffic analysis", :abstract=>"xyz",:keywords=>"Operations")
-pub90= Publication.create(:name=> "Detecting algorithmically generated malicious domain names", :abstract=>"xyz",:keywords=>"Operations")
-pub91= Publication.create(:name=> "Detecting Spam URLs in Social Media via Behavioral Analysis", :abstract=>"xyz",:keywords=>"Operations")
-pub92= Publication.create(:name=> "Droidminer: Automated mining and characterization of fine grained malicious behaviors in android applications", :abstract=>"xyz",:keywords=>"Operations")
-pub93= Publication.create(:name=> "EFFORT: A new host–network cooperated framework for efficient and effective bot malware detection", :abstract=>"xyz",:keywords=>"Operations")
-pub94= Publication.create(:name=> "EFFORT: Efficient and effective bot malware detection", :abstract=>"xyz",:keywords=>"Operations")
-pub95= Publication.create(:name=> "Empirical evaluation and new design for fighting evolving Twitter spammers", :abstract=>"xyz",:keywords=>"Operations")
-pub96= Publication.create(:name=> "A First Step Toward Network Security Virtualization: From Concept To Prototype", :abstract=>"xyz",:keywords=>"Operations")
-pub97= Publication.create(:name=> "FloodGuard: A DoS Attack Prevention Extension in Software Defined Networks", :abstract=>"xyz",:keywords=>"Operations")
-pub98= Publication.create(:name=> "FRESCO: Modular Composable Security Services for Software Defined Networks", :abstract=>"xyz",:keywords=>"Operations")
-pub99= Publication.create(:name=> "GOLDENEYE: Efficiently and Effectively Unveiling Malware’s Targeted Environment", :abstract=>"xyz",:keywords=>"Operations")
-pub100= Publication.create(:name=> "Impact of cyber attacks on transient stability of smart grids with voltage support devices", :abstract=>"xyz",:keywords=>"Operations")
-pub101= Publication.create(:name=> "Implementing attacks for modbus/TCP protocol in a real time cyber physical system test bed", :abstract=>"xyz",:keywords=>"Operations")
-pub102= Publication.create(:name=> "Key Exchange Trust Evaluation in Peer to Peer Sensor Networks with Unconditionally Secure Key Exchange", :abstract=>"xyz",:keywords=>"Operations")
-pub103= Publication.create(:name=> "Malware propagation in large scale networks", :abstract=>"xyz",:keywords=>"Operations")
-pub104= Publication.create(:name=> "Neighborhood failures in random topology covert communication networks", :abstract=>"xyz",:keywords=>"Operations")
-pub105= Publication.create(:name=> "Nomad: Towards non intrusive moving target defense against web bots", :abstract=>"xyz",:keywords=>"Operations")
-pub106= Publication.create(:name=> "Of-guard: A DoS Attack Prevention Extension in Software-defined Networks", :abstract=>"xyz",:keywords=>"Operations")
-pub107= Publication.create(:name=> "On KLJN based Secure Key Distribution in Vehicular Communication Networks", :abstract=>"xyz",:keywords=>"Operations")
-pub108= Publication.create(:name=> "On secure communication with known interference", :abstract=>"xyz",:keywords=>"Operations")
-pub109= Publication.create(:name=> "Permission Use Analysis for Vetting Undesirable Behaviors in Android Apps", :abstract=>"xyz",:keywords=>"Operations")
-pub110= Publication.create(:name=> "Poisoning Network Visibility in Software-Defined Networks: New Attacks and Countermeasures", :abstract=>"xyz",:keywords=>"Operations")
-pub111= Publication.create(:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Operations")
-pub112= Publication.create(:name=> "Securing vehicle communication systems by the kljn key exchange protocol", :abstract=>"xyz",:keywords=>"Operations")
-pub113= Publication.create(:name=> "A security enforcement kernel for OpenFlow networks", :abstract=>"xyz",:keywords=>"Operations")
-pub114= Publication.create(:name=> "Shadow attacks: automatically evading system-call-behavior based malware detection", :abstract=>"xyz",:keywords=>"Operations")
-pub115= Publication.create(:name=> "A smart grid vulnerability analysis framework for coordinated variable structure switching attacks", :abstract=>"xyz",:keywords=>"Operations")
-pub116= Publication.create(:name=> "The social honeypot project: protecting online communities from spammers", :abstract=>"xyz",:keywords=>"Operations")
-pub117= Publication.create(:name=> "SRID: State Relation Based Intrusion Detection for False Data Injection Attacks in SCADA", :abstract=>"xyz",:keywords=>"Operations")
-pub118= Publication.create(:name=> "Subversion Impedance in Covert Communication Networks", :abstract=>"xyz",:keywords=>"Operations")
-pub119= Publication.create(:name=> "Uipicker: User-input privacy identification in mobile applications", :abstract=>"xyz",:keywords=>"Operations")
-pub120= Publication.create(:name=> "Uncovering Crowdsourced Manipulation of Online Reviews", :abstract=>"xyz",:keywords=>"Operations")
-pub121= Publication.create(:name=> "Uncovering Social Spammers: Social Honeypots + Machine Learning", :abstract=>"xyz",:keywords=>"Operations")
-pub122= Publication.create(:name=> "Vetting undesirable behaviors in android apps with permission use analysis", :abstract=>"xyz",:keywords=>"Operations")
-pub123= Publication.create(:name=> "Winning with DNS failures: Strategies for faster botnet detection", :abstract=>"xyz",:keywords=>"Operations")
-pub124= Publication.create(:name=> "Analyzing spammers' social networks for fun and profit: a case study of cyber criminal ecosystem on twitter", :abstract=>"xyz",:keywords=>"Analysis")
-pub125= Publication.create(:name=> "Attacking software-defined networks: A first feasibility study", :abstract=>"xyz",:keywords=>"Analysis")
-pub126= Publication.create(:name=> "AutoProbe: Towards Automatic Active Malicious Server Probing Using Dynamic Binary Analysis", :abstract=>"xyz",:keywords=>"Analysis")
-pub127= Publication.create(:name=> "Behavior instance extraction for risk aware control in mission centric systems", :abstract=>"xyz",:keywords=>"Analysis")
-pub128= Publication.create(:name=> "CloudWatcher: Network security monitoring using OpenFlow in dynamic cloud networks (or: How to provide security monitoring as a service in clouds?)", :abstract=>"xyz",:keywords=>"Analysis")
-pub129= Publication.create(:name=> "Combating Threats to Collective Attention in Social Media: An Evaluation", :abstract=>"xyz",:keywords=>"Analysis")
-pub130= Publication.create(:name=> "Conficker and beyond: a large-scale empirical study", :abstract=>"xyz",:keywords=>"Analysis")
-pub131= Publication.create(:name=> "Content-driven detection of campaigns in social media", :abstract=>"xyz",:keywords=>"Analysis")
-pub132= Publication.create(:name=> "Cross-analysis of botnet victims: New insights and implications", :abstract=>"xyz",:keywords=>"Analysis")
-pub133= Publication.create(:name=> "Current Injection Attack against the KLJN Secure Key Exchange", :abstract=>"xyz",:keywords=>"Analysis")
-pub134= Publication.create(:name=> "Cyberprobe: Towards internet-scale active detection of malicious servers", :abstract=>"xyz",:keywords=>"Analysis")
-pub135= Publication.create(:name=> "The Deep Web and the Darknet: A Look Inside the Internet's Massive Black Box", :abstract=>"xyz",:keywords=>"Analysis")
-pub136= Publication.create(:name=> "Detecting algorithmically generated domain-flux attacks with DNS traffic analysis", :abstract=>"xyz",:keywords=>"Analysis")
-pub137= Publication.create(:name=> "Detecting algorithmically generated malicious domain names", :abstract=>"xyz",:keywords=>"Analysis")
-pub138= Publication.create(:name=> "Detecting Spam URLs in Social Media via Behavioral Analysis", :abstract=>"xyz",:keywords=>"Analysis")
-pub139= Publication.create(:name=> "Die free or live hard? empirical evaluation and new design for fighting evolving twitter spammers", :abstract=>"xyz",:keywords=>"Analysis")
-pub140= Publication.create(:name=> "Droidminer: Automated mining and characterization of fine-grained malicious behaviors in android applications", :abstract=>"xyz",:keywords=>"Analysis")
-pub141= Publication.create(:name=> "EFFORT: A new host–network cooperated framework for efficient and effective bot malware detection", :abstract=>"xyz",:keywords=>"Analysis")
-pub142= Publication.create(:name=> "EFFORT: Efficient and effective bot malware detection", :abstract=>"xyz",:keywords=>"Analysis")
-pub143= Publication.create(:name=> "Elimination of a Second-Law-attack, and all cable-resistance-based attacks, in the Kirchhoff law Johnson noise (KLJN) secure key exchange system", :abstract=>"xyz",:keywords=>"Analysis")
-pub144= Publication.create(:name=> "Empirical evaluation and new design for fighting evolving Twitter spammers", :abstract=>"xyz",:keywords=>"Analysis")
-pub145= Publication.create(:name=> "FloodGuard: A DoS Attack Prevention Extension in Software-Defined Networks", :abstract=>"xyz",:keywords=>"Analysis")
-pub146= Publication.create(:name=> "GOLDENEYE: Efficiently and Effectively Unveiling Malware’s Targeted Environment", :abstract=>"xyz",:keywords=>"Analysis")
-pub147= Publication.create(:name=> "Identity, Privacy, and Deception in Social Networks", :abstract=>"xyz",:keywords=>"Analysis")
-pub148= Publication.create(:name=> "Impact analysis of transient stability due to cyber attack on Flexible Alternating Current Transmission System (FACTS) devices", :abstract=>"xyz",:keywords=>"Analysis")
-pub149= Publication.create(:name=> "A large-scale empirical study of conficker", :abstract=>"xyz",:keywords=>"Analysis")
-pub150= Publication.create(:name=> "Malware propagation in large-scale networks", :abstract=>"xyz",:keywords=>"Analysis")
-pub151= Publication.create(:name=> "Neighborhood failures in random topology covert communication networks", :abstract=>"xyz",:keywords=>"Analysis")
-pub152= Publication.create(:name=> "Network delay caused by cyber attacks on SVC and its impact on transient stability of smart grids", :abstract=>"xyz",:keywords=>"Analysis")
-pub153= Publication.create(:name=> "Nomad: Towards non-intrusive moving-target defense against web bots", :abstract=>"xyz",:keywords=>"Analysis")
-pub154= Publication.create(:name=> "On the security of the Kirchhoff-law–Johnson-noise (KLJN) communicator", :abstract=>"xyz",:keywords=>"Analysis")
-pub155= Publication.create(:name=> "Permission Use Analysis for Vetting Undesirable Behaviors in Android Apps", :abstract=>"xyz",:keywords=>"Analysis")
-pub156= Publication.create(:name=> "Privacy-preserving distributed profile matching in proximity based mobile social networks", :abstract=>"xyz",:keywords=>"Analysis")
-pub157= Publication.create(:name=> "Privacy-Preserving Matching Protocols for Attributes and Strings", :abstract=>"xyz",:keywords=>"Analysis")
-pub158= Publication.create(:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Analysis")
-pub159= Publication.create(:name=> "Sensitivity Analysis of Real-Time Locational Marginal Price to SCADA Sensor Data Corruption", :abstract=>"xyz",:keywords=>"Analysis")
-pub160= Publication.create(:name=> "Seven Months with the Devils: A Long-Term Study of Content Polluters on Twitter", :abstract=>"xyz",:keywords=>"Analysis")
-pub161= Publication.create(:name=> "Shadow attacks: automatically evading system-call-behavior based malware detection", :abstract=>"xyz",:keywords=>"Analysis")
-pub162= Publication.create(:name=> "A smart grid vulnerability analysis framework for coordinated variable structure switching attacks", :abstract=>"xyz",:keywords=>"Analysis")
-pub163= Publication.create(:name=> "The social honeypot project: protecting online communities from spammers", :abstract=>"xyz",:keywords=>"Analysis")
-pub164= Publication.create(:name=> "SRID: State Relation Based Intrusion Detection for False Data Injection Attacks in SCADA", :abstract=>"xyz",:keywords=>"Analysis")
-pub165= Publication.create(:name=> "Towards a framework for cyber attack impact analysis of the electric smart grid", :abstract=>"xyz",:keywords=>"Analysis")
-pub166= Publication.create(:name=> "Uncovering Crowdsourced Manipulation of Online Reviews", :abstract=>"xyz",:keywords=>"Analysis")
-pub167= Publication.create(:name=> "Uncovering Social Spammers: Social Honeypots + Machine Learning", :abstract=>"xyz",:keywords=>"Analysis")
-pub168= Publication.create(:name=> "Vetting undesirable behaviors in android apps with permission use analysis", :abstract=>"xyz",:keywords=>"Analysis")
-pub169= Publication.create(:name=> "VulHunter: Toward Discovering Vulnerabilities in Android Applications", :abstract=>"xyz",:keywords=>"Analysis")
-pub170= Publication.create(:name=> "Winning with DNS failures: Strategies for faster botnet detection", :abstract=>"xyz",:keywords=>"Analysis")
-pub171= Publication.create(:name=> "Analyzing sensitive data transmission in android for privacy leakage detection", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub172= Publication.create(:name=> "Behavior instance extraction for risk aware control in mission centric systems", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub173= Publication.create(:name=> "Crowdturfers, Campaigns, and Social Media: Tracking and Revealing Crowdsourced Manipulation of Social Media", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub174= Publication.create(:name=> "Detecting Spam URLs in Social Media via Behavioral Analysis", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub175= Publication.create(:name=> "Die free or live hard? empirical evaluation and new design for fighting evolving twitter spammers", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub176= Publication.create(:name=> "Identity, Privacy, and Deception in Social Networks", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub177= Publication.create(:name=> "Neighborhood failures in random topology covert communication networks", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub178= Publication.create(:name=> "Privacy preserving distributed profile matching in proximity based mobile social networks", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub179= Publication.create(:name=> "Privacy Preserving Matching Protocols for Attributes and Strings", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub180= Publication.create(:name=> "Ramp Induced Data Attacks on Look Ahead Dispatch in Real Time Power Markets", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub181= Publication.create(:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub182= Publication.create(:name=> "SAPPHIRE: Anonymity for enhanced control and private collaboration in healthcare clouds", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub183= Publication.create(:name=> "Sensitivity Analysis of Real Time Locational Marginal Price to SCADA Sensor Data Corruption", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub184= Publication.create(:name=> "Seven Months with the Devils: A Long Term Study of Content Polluters on Twitter", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub185= Publication.create(:name=> "Uipicker: User input privacy identification in mobile applications", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
-pub186= Publication.create(:name=> "Uncovering Crowdsourced Manipulation of Online Reviews", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
+publications = [{:name=> "Behavior instance extraction for risk aware control in mission centric systems", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Behavior instance extraction for risk aware control in mission centric systems", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Bit errors in the Kirchhoff Law–Johnson Noise secure key exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Cable Capacitance Attack against the KLJN Secure Key Exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Current and voltage based bit errors and their combined mitigation for the Kirchhoff law–Johnson noise secure key exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Current Injection Attack against the KLJN Secure Key Exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "The Deep Web and the Darknet: A Look Inside the Internet's Massive Black Box", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Detecting Spam URLs in Social Media via Behavioral Analysis", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Elimination of a Second Law attack, and all cable resistance based attacks, in the Kirchhoff law Johnson noise (KLJN) secure key exchange system", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Enhanced secure key exchange systems based on the Johnson noise scheme", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Enhanced usage of keys obtained by physical, unconditionally secure distributions", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Errors and their mitigation at the Kirchhoff law Johnson noise secure key exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Facts, myths and fights about the KLJN classical physical key exchanger", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Fastplay A Parallelization Model and Implementation of Secure Multiparty Computation (SMC) on CUDA based GPU Cluster Architecture", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "A First Step Toward Network Security Virtualization: From Concept To Prototype", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "GOLDENEYE: Efficiently and Effectively Unveiling Malware’s Targeted Environment", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Identity, Privacy, and Deception in Social Networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Impact analysis of transient stability due to cyber attack on Flexible Alternating Current Transmission System (FACTS) devices", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Information theoretic security by the laws of classical physics", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Information theoretically secure, enhanced Johnson noise based key distribution over the smart grid with switched filters", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Key Exchange Trust Evaluation in Peer to Peer Sensor Networks with Unconditionally Secure Key Exchange", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Model checking invariant security properties in OpenFlow", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "On KLJN based Secure Key Distribution in Vehicular Communication Networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "On secure communication with known interference", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "On the security of the Kirchhoff law–Johnson noise (KLJN) communicator", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Permission Use Analysis for Vetting Undesirable Behaviors in Android Apps", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Physical Unclonable Function Hardware Keys Utilizing Kirchhoff Law Johnson Noise Secure Key Exchange and Noise Based Logic", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Reliable, deniable and hidable communication: A quick survey", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Reliable, deniable, and hidable communication over multipath networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Resource requirements and speed versus geometry of unconditionally secure physical key exchanges", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "SAPPHIRE: Anonymity for enhanced control and private collaboration in healthcare clouds", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Secrecy Capacity per Unit Cost", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Secret writing on dirty paper: A deterministic view", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Securing vehicle communication systems by the kljn key exchange protocol", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Subversion Impedance in Covert Communication Networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Switched system models for coordinated cyber physical attack construction and simulation", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Topology Construction of Near Optimal Covert Communications Networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Unconditional security for the smart power grids and star networks", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Vetting undesirable behaviors in android apps with permission use analysis", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Visual Sensor Network Processing and Preventative Steganalysis", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "VulHunter: Toward Discovering Vulnerabilities in Android Applications", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Weakly secure regenerating codes for distributed storage", :abstract=>"xyz",:keywords=>"Security Mechanisms/Functionality"},
+					 {:name=> "Avant guard: Scalable and vigilant switch flow management in software-defined networks", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Bloom filter based intrusion detection for smart grid SCADA", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "A class of cyber physical switching attacks for power system disruption", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "A coordinated multi switch attack for cascading failures in smart grid", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Coordinated variable structure switching attack in the presence of model error and state estimation", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Coordinated variable structure switching in smart power systems: Attacks and mitigation", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Eliminating network protocol vulnerabilities through abstraction and systems language design", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Fastplay A Parallelization Model and Implementation of Secure Multiparty Computation (SMC) on CUDA based GPU Cluster Architecture", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "A First Step Toward Network Security Virtualization: From Concept To Prototype", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "A Framework for Modeling Cyber Physical Switching Attacks in Smart Grid", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "FRESCO: Modular Composable Security Services for Software Defined Networks", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Impact analysis of transient stability due to cyber attack on Flexible Alternating Current Transmission System (FACTS) devices", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Impact of cyber attacks on transient stability of smart grids with voltage support devices", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Implementing attacks for modbus/TCP protocol in a real time cyber physical system test bed", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Information theoretically secure, enhanced Johnson noise based key distribution over the smart grid with switched filters", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Model checking invariant security properties in OpenFlow", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Of guard: A DoS Attack Prevention Extension in Software defined Networks", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Poisoning Network Visibility in Software Defined Networks: New Attacks and Countermeasures", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Ramp Induced Data Attacks on Look Ahead Dispatch in Real Time Power Markets", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Reliable, deniable, and hidable communication over multipath networks", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "SAPPHIRE: Anonymity for enhanced control and private collaboration in healthcare clouds", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Securing vehicle communication systems by the kljn key exchange protocol", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "A security enforcement kernel for OpenFlow networks", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Sensitivity Analysis of Real Time Locational Marginal Price to SCADA Sensor Data Corruption", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "A smart grid vulnerability analysis framework for coordinated variable structure switching attacks", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "SRID: State Relation Based Intrusion Detection for False Data Injection Attacks in SCADA", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Switched system models for coordinated cyber physical attack construction and simulation", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Topology Construction of Near Optimal Covert Communications Networks", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Towards a framework for cyber attack impact analysis of the electric smart grid", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Unconditional security for the smart power grids and star networks", :abstract=>"xyz",:keywords=>"Architecture"},
+					 {:name=> "Model checking invariant security properties in OpenFlow", :abstract=>"xyz",:keywords=>"Assurance"},
+					 {:name=> "Attacking software defined networks: A first feasibility study", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "AutoProbe: Towards Automatic Active Malicious Server Probing Using Dynamic Binary Analysis", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Avant guard: Scalable and vigilant switch flow management in software defined networks", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Behavior instance extraction for risk aware control in mission centric systems", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Bloom filter based intrusion detection for smart grid SCADA", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Cable Capacitance Attack against the KLJN Secure Key Exchange", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "CATS: Characterizing automation of Twitter spammers", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "A class of cyber physical switching attacks for power system disruption", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "CloudWatcher: Network security monitoring using OpenFlow in dynamic cloud networks (or: How to provide security monitoring as a service in clouds?)", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Content driven detection of campaigns in social media", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "A coordinated multi switch attack for cascading failures in smart grid", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Coordinated variable structure switching attack in the presence of model error and state estimation", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Coordinated variable structure switching in smart power systems: Attacks and mitigation", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Crowdturfers, Campaigns, and Social Media: Tracking and Revealing Crowdsourced Manipulation of Social Media", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Cyberprobe: Towards internet scale active detection of malicious servers", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Detecting algorithmically generated domain flux attacks with DNS traffic analysis", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Detecting algorithmically generated malicious domain names", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Detecting Spam URLs in Social Media via Behavioral Analysis", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Droidminer: Automated mining and characterization of fine grained malicious behaviors in android applications", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "EFFORT: A new host–network cooperated framework for efficient and effective bot malware detection", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "EFFORT: Efficient and effective bot malware detection", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Empirical evaluation and new design for fighting evolving Twitter spammers", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "A First Step Toward Network Security Virtualization: From Concept To Prototype", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "FloodGuard: A DoS Attack Prevention Extension in Software Defined Networks", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "FRESCO: Modular Composable Security Services for Software Defined Networks", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "GOLDENEYE: Efficiently and Effectively Unveiling Malware’s Targeted Environment", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Impact of cyber attacks on transient stability of smart grids with voltage support devices", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Implementing attacks for modbus/TCP protocol in a real time cyber physical system test bed", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Key Exchange Trust Evaluation in Peer to Peer Sensor Networks with Unconditionally Secure Key Exchange", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Malware propagation in large scale networks", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Neighborhood failures in random topology covert communication networks", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Nomad: Towards non intrusive moving target defense against web bots", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Of-guard: A DoS Attack Prevention Extension in Software-defined Networks", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "On KLJN based Secure Key Distribution in Vehicular Communication Networks", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "On secure communication with known interference", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Permission Use Analysis for Vetting Undesirable Behaviors in Android Apps", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Poisoning Network Visibility in Software-Defined Networks: New Attacks and Countermeasures", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Securing vehicle communication systems by the kljn key exchange protocol", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "A security enforcement kernel for OpenFlow networks", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Shadow attacks: automatically evading system-call-behavior based malware detection", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "A smart grid vulnerability analysis framework for coordinated variable structure switching attacks", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "The social honeypot project: protecting online communities from spammers", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "SRID: State Relation Based Intrusion Detection for False Data Injection Attacks in SCADA", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Subversion Impedance in Covert Communication Networks", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Uipicker: User-input privacy identification in mobile applications", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Uncovering Crowdsourced Manipulation of Online Reviews", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Uncovering Social Spammers: Social Honeypots + Machine Learning", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Vetting undesirable behaviors in android apps with permission use analysis", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Winning with DNS failures: Strategies for faster botnet detection", :abstract=>"xyz",:keywords=>"Operations"},
+					 {:name=> "Analyzing spammers' social networks for fun and profit: a case study of cyber criminal ecosystem on twitter", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Attacking software-defined networks: A first feasibility study", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "AutoProbe: Towards Automatic Active Malicious Server Probing Using Dynamic Binary Analysis", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Behavior instance extraction for risk aware control in mission centric systems", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "CloudWatcher: Network security monitoring using OpenFlow in dynamic cloud networks (or: How to provide security monitoring as a service in clouds?)", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Combating Threats to Collective Attention in Social Media: An Evaluation", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Conficker and beyond: a large-scale empirical study", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Content-driven detection of campaigns in social media", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Cross-analysis of botnet victims: New insights and implications", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Current Injection Attack against the KLJN Secure Key Exchange", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Cyberprobe: Towards internet-scale active detection of malicious servers", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "The Deep Web and the Darknet: A Look Inside the Internet's Massive Black Box", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Detecting algorithmically generated domain-flux attacks with DNS traffic analysis", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Detecting algorithmically generated malicious domain names", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Detecting Spam URLs in Social Media via Behavioral Analysis", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Die free or live hard? empirical evaluation and new design for fighting evolving twitter spammers", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Droidminer: Automated mining and characterization of fine-grained malicious behaviors in android applications", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "EFFORT: A new host–network cooperated framework for efficient and effective bot malware detection", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "EFFORT: Efficient and effective bot malware detection", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Elimination of a Second-Law-attack, and all cable-resistance-based attacks, in the Kirchhoff law Johnson noise (KLJN) secure key exchange system", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Empirical evaluation and new design for fighting evolving Twitter spammers", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "FloodGuard: A DoS Attack Prevention Extension in Software-Defined Networks", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "GOLDENEYE: Efficiently and Effectively Unveiling Malware’s Targeted Environment", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Identity, Privacy, and Deception in Social Networks", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Impact analysis of transient stability due to cyber attack on Flexible Alternating Current Transmission System (FACTS) devices", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "A large-scale empirical study of conficker", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Malware propagation in large-scale networks", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Neighborhood failures in random topology covert communication networks", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Network delay caused by cyber attacks on SVC and its impact on transient stability of smart grids", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Nomad: Towards non-intrusive moving-target defense against web bots", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "On the security of the Kirchhoff-law–Johnson-noise (KLJN) communicator", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Permission Use Analysis for Vetting Undesirable Behaviors in Android Apps", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Privacy-preserving distributed profile matching in proximity based mobile social networks", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Privacy-Preserving Matching Protocols for Attributes and Strings", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Sensitivity Analysis of Real-Time Locational Marginal Price to SCADA Sensor Data Corruption", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Seven Months with the Devils: A Long-Term Study of Content Polluters on Twitter", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Shadow attacks: automatically evading system-call-behavior based malware detection", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "A smart grid vulnerability analysis framework for coordinated variable structure switching attacks", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "The social honeypot project: protecting online communities from spammers", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "SRID: State Relation Based Intrusion Detection for False Data Injection Attacks in SCADA", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Towards a framework for cyber attack impact analysis of the electric smart grid", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Uncovering Crowdsourced Manipulation of Online Reviews", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Uncovering Social Spammers: Social Honeypots + Machine Learning", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Vetting undesirable behaviors in android apps with permission use analysis", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "VulHunter: Toward Discovering Vulnerabilities in Android Applications", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Winning with DNS failures: Strategies for faster botnet detection", :abstract=>"xyz",:keywords=>"Analysis"},
+					 {:name=> "Analyzing sensitive data transmission in android for privacy leakage detection", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Behavior instance extraction for risk aware control in mission centric systems", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Crowdturfers, Campaigns, and Social Media: Tracking and Revealing Crowdsourced Manipulation of Social Media", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Detecting Spam URLs in Social Media via Behavioral Analysis", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Die free or live hard? empirical evaluation and new design for fighting evolving twitter spammers", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Identity, Privacy, and Deception in Social Networks", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Neighborhood failures in random topology covert communication networks", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Privacy preserving distributed profile matching in proximity based mobile social networks", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Privacy Preserving Matching Protocols for Attributes and Strings", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Ramp Induced Data Attacks on Look Ahead Dispatch in Real Time Power Markets", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "SAPPHIRE: Anonymity for enhanced control and private collaboration in healthcare clouds", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Sensitivity Analysis of Real Time Locational Marginal Price to SCADA Sensor Data Corruption", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Seven Months with the Devils: A Long Term Study of Content Polluters on Twitter", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Uipicker: User input privacy identification in mobile applications", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+					 {:name=> "Uncovering Crowdsourced Manipulation of Online Reviews", :abstract=>"xyz",:keywords=>"Non Technical CD Issues"},
+			]
+			
+#faculties = [{:name=> "xxx", :dept=> "yyy", :desc=> "zzz", :office=>"uuu", :phone_no=>"11111", :email=>"jjj@gmail.com"}]
+			
+publications.each do |publication|
+    Publication.create!(publication)
+end
