@@ -11,11 +11,96 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 0) do
+ActiveRecord::Schema.define(version: 20160326042028) do
 
-  create_table "faculties_students", id: false, force: :cascade do |t|
-    t.integer "faculty_id", null: false
-    t.integer "student_id", null: false
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
+  create_table "educations", force: :cascade do |t|
+    t.string   "courses_offered"
+    t.string   "course_number"
+    t.string   "semester_offered"
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+  end
+
+  create_table "events", force: :cascade do |t|
+    t.string   "name"
+    t.string   "date"
+    t.text     "desc"
+    t.text     "venue"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "faculties", force: :cascade do |t|
+    t.string   "name"
+    t.string   "dept"
+    t.text     "desc"
+    t.text     "office"
+    t.string   "phone_no"
+    t.string   "email"
+    t.integer  "research_interest_id"
+    t.integer  "project_id"
+    t.integer  "student_id"
+    t.integer  "publication_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+  end
+
+  create_table "faculties_students", force: :cascade do |t|
+    t.integer "faculty_id"
+    t.integer "student_id"
+  end
+
+  create_table "projects", force: :cascade do |t|
+    t.string   "name"
+    t.string   "sponsor"
+    t.text     "desc"
+    t.integer  "faculty_id"
+    t.integer  "student_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "publications", force: :cascade do |t|
+    t.string   "name"
+    t.text     "abstract"
+    t.string   "keywords"
+    t.integer  "faculty_id"
+    t.integer  "student_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "publications_faculties", force: :cascade do |t|
+    t.integer "faculty_id"
+    t.integer "publication_id"
+  end
+
+  create_table "publications_students", force: :cascade do |t|
+    t.integer "publication_id"
+    t.integer "student_id"
+  end
+
+  create_table "research_interests", force: :cascade do |t|
+    t.string   "name"
+    t.integer  "faculty_id"
+    t.integer  "student_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "students", force: :cascade do |t|
+    t.string   "name"
+    t.string   "dept"
+    t.text     "desc"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.integer  "research_interest_id"
+    t.integer  "project_id"
+    t.integer  "faculty_id"
+    t.integer  "publication_id"
   end
 
 end
