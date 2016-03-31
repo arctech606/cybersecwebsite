@@ -7,13 +7,13 @@ RSpec.describe "events/index", type: :view do
         :name => "Name",
         :date => "Date",
         :desc => "MyText",
-        :venue => "MyText"
+        :venue => "MyText1"
       ),
       Event.create!(
         :name => "Name",
         :date => "Date",
         :desc => "MyText",
-        :venue => "MyText"
+        :venue => "MyText1"
       )
     ])
   end
@@ -23,6 +23,6 @@ RSpec.describe "events/index", type: :view do
     assert_select "tr>td", :text => "Name".to_s, :count => 2
     assert_select "tr>td", :text => "Date".to_s, :count => 2
     assert_select "tr>td", :text => "MyText".to_s, :count => 2
-    assert_select "tr>td", :text => "MyText".to_s, :count => 2
+    assert_select "tr>td", :text => "MyText1".to_s, :count => 2
   end
 end

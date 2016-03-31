@@ -3,6 +3,7 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
+Note to run postgresql if it doesnt run: sudo service postgresql restart
 Things you may want to cover:
 
 * Ruby version 123
