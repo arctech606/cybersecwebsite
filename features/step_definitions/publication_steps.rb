@@ -35,7 +35,6 @@ When(/^I search for "([^"]*)" I should not find "([^"]*)"$/) do |query, bug|
   steps %{
     And I fill in "search" with "#{query}"
     And I press "Search"
-    Then I must be directed to the "/publications?utf8=✓&search=#{query}" page 
     Then I should not see "#{bug}"
   }
 end
