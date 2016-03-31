@@ -54,6 +54,7 @@ group :development, :test do
   gem 'capybara'
   gem 'launchy'
   gem 'simplecov', :require => false
+  gem "codeclimate-test-reporter", require: nil
 end
 
 group :production do

@@ -1,114 +1,31 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/ubuntu/workspace/website/app/helpers/application_helper.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/website/app/helpers/educations_helper.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/educations_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/website/app/helpers/events_helper.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/events_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/website/app/helpers/faculties_helper.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/faculties_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/website/app/helpers/homepage_helper.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/homepage_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/website/app/helpers/publications_helper.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/publications_helper.rb": [
         1,
         null
       ],
-      "/home/ubuntu/workspace/website/app/controllers/educations_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/controllers/events_controller.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/educations_controller.rb": [
         1,
         1,
         null,
@@ -184,7 +101,14 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/website/app/controllers/faculties_controller.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/events_controller.rb": [
         1,
         1,
         null,
@@ -260,30 +184,13 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/website/app/controllers/homepage_controller.rb": [
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/controllers/publications_controller.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/faculties_controller.rb": [
         1,
         1,
         null,
         null,
         null,
         1,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
         1,
         null,
         null,
@@ -353,17 +260,110 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/website/app/models/education.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/homepage_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/publications_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/education.rb": [
         1,
         1,
         null
       ],
-      "/home/ubuntu/workspace/website/app/models/event.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/event.rb": [
         1,
         1,
         null
       ],
-      "/home/ubuntu/workspace/website/app/models/faculty.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/faculty.rb": [
         1,
         1,
         1,
@@ -373,7 +373,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/website/app/models/publication.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/publication.rb": [
         1,
         null,
         1,
@@ -392,7 +392,14 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/website/app/models/student.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/project.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/student.rb": [
         0,
         0,
         0,
@@ -401,14 +408,7 @@
         0,
         0
       ],
-      "/home/ubuntu/workspace/website/app/models/research_interest.rb": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/ubuntu/workspace/website/app/models/project.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/research_interest.rb": [
         0,
         0,
         0,
@@ -416,133 +416,16 @@
         0
       ]
     },
-    "timestamp": 1459381403
+    "timestamp": 1459387065
   },
   "Cucumber Features": {
     "coverage": {
-      "/home/ubuntu/workspace/website/app/models/event.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/event.rb": [
         1,
         1,
         null
       ],
-      "/home/ubuntu/workspace/website/app/controllers/events_controller.rb": [
-        1,
-        1,
-        null,
-        null,
-        null,
-        1,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        0,
-        0,
-        null,
-        null,
-        null,
-        null,
-        null,
-        null,
-        1,
-        0,
-        0,
-        0,
-        0,
-        null,
-        null,
-        null,
-        1,
-        null,
-        1,
-        0,
-        null,
-        null,
-        null,
-        1,
-        0,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/helpers/application_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/helpers/educations_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/helpers/events_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/helpers/faculties_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/helpers/homepage_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/helpers/publications_helper.rb": [
-        1,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/models/faculty.rb": [
-        1,
-        1,
-        1,
-        1,
-        1,
-        1,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/website/app/controllers/faculties_controller.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/events_controller.rb": [
         1,
         1,
         null,
@@ -618,13 +501,130 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/website/app/controllers/homepage_controller.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/application_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/educations_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/events_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/faculties_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/homepage_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/helpers/publications_helper.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/faculty.rb": [
+        1,
+        1,
+        1,
+        1,
         1,
         1,
         null,
         null
       ],
-      "/home/ubuntu/workspace/website/app/models/publication.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/faculties_controller.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        null,
+        null,
+        null,
+        1,
+        null,
+        1,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/homepage_controller.rb": [
+        1,
+        1,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/publication.rb": [
         1,
         null,
         1,
@@ -643,7 +643,7 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/website/app/controllers/publications_controller.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/publications_controller.rb": [
         1,
         1,
         null,
@@ -730,7 +730,14 @@
         null,
         null
       ],
-      "/home/ubuntu/workspace/website/app/models/student.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/project.rb": [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/student.rb": [
         0,
         0,
         0,
@@ -739,26 +746,19 @@
         0,
         0
       ],
-      "/home/ubuntu/workspace/website/app/models/education.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/education.rb": [
         0,
         0,
         0
       ],
-      "/home/ubuntu/workspace/website/app/models/research_interest.rb": [
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/ubuntu/workspace/website/app/models/project.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/models/research_interest.rb": [
         0,
         0,
         0,
         0,
         0
       ],
-      "/home/ubuntu/workspace/website/app/controllers/educations_controller.rb": [
+      "/home/ubuntu/workspace/cybersecwebsite/app/controllers/educations_controller.rb": [
         0,
         0,
         0,
@@ -835,6 +835,6 @@
         0
       ]
     },
-    "timestamp": 1459381439
+    "timestamp": 1459387077
   }
 }
