@@ -19,12 +19,23 @@ Then(/^I should not see "([^"]*)" and "([^"]*)"/) do |arg1,arg2|
   page.should have_no_content(arg2)
 end
 
-When(/^I click "([^"]*)" Button$/) do |arg1|
-  click_button(arg1)
+
+
+When (/^I click "([^"]*)" Button$/) do |button|
+  click_button(button)
 end
 
 Then(/^I must be directed to the "([^"]*)" page for the "([^"]*)" Query$/) do |arg1, arg2|
   if $1=='Publications'
-  visit("/publications?utf8=✓&search=#{arg2}")
+  visit "/publications?utf8=✓&search=#{arg2}"
   end
+end
+
+When(/^I search for "([^"]*)" I should not find "([^"]*)"$/) do |query, bug|
+  steps %{
+    And I fill in "search" with "#{query}"
+    And I press "Search"
+    Then I must be directed to the "/publications?utf8=✓&search=#{query}" page 
+    Then I should not see "#{bug}"
+  }
 end
