@@ -6,8 +6,6 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-
-<%= yield %>
 <body>
   <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container-fluid">
@@ -35,5 +33,8 @@
     </div>
     
   </header>
+  <div class="container-fluid">
+      <%= yield %>
+  </div>
 </body>
 </html>
