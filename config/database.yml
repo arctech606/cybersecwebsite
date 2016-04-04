@@ -22,7 +22,6 @@
 #test:
  # <<: *default
   #database: database_test
-
 #production:
  # <<: *default
   #database: database_production
