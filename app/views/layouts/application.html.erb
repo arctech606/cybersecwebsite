@@ -6,12 +6,15 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
-<body>
 
 <%= yield %>
 <body>
   <header class="navbar navbar-fixed-top navbar-inverse">
     <div class="container-fluid">
+        <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %>
+
       <div class= "headtitle">
         <h1>TEXAS A & M CYBERSECURITY CENTER</h1>
       </div>
@@ -26,12 +29,11 @@
           <li> <%= link_to "Students corner","#" %> </li>
           <li> <%= link_to "Find faculty experts",faculties_path %> </li>
         </ul>
+        
       </nav>
+      
     </div>
+    
   </header>
-</body>
-
-
-
 </body>
 </html>
