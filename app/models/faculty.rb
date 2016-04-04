@@ -4,5 +4,6 @@ class Faculty < ActiveRecord::Base
   has_many :publications
   has_many :research_interests
   has_and_belongs_to_many :students
-  
+  has_secure_password
+  validates :password, length: { minimum: 6 }
 end
