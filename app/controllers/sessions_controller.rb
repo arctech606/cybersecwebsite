@@ -6,6 +6,7 @@ class SessionsController < ApplicationController
     if faculty && faculty.authenticate(params[:session][:password])
       #will successfully log the faculty in
       log_in faculty
+      params[:session][:remember_me] == '1' ? remember(faculty) : forget(faculty)
       redirect_to faculty_path(faculty.id)
     else
       flash[:danger] = 'Invalid email/password combination' # Not quite right!
@@ -13,7 +14,7 @@ class SessionsController < ApplicationController
     end
   end
   def destroy
-    log_out
+    log_out if logged_in?
     redirect_to root_url
   end
 end
