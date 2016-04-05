@@ -1,36 +1,27 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Faculties</h1>
+<h1>Faculty Experts</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Dept</th>
-      <th>Desc</th>
-      <th>Office</th>
-      <th>Pnone_no</th>
-      <th>Email</th>
-      <th colspan="6"></th>
-    </tr>
-  </thead>
 
-  <tbody>
+
     <% @faculties.each do |faculty| %>
-      <tr>
-        <td><%= faculty.name %></td>
-        <td><%= faculty.dept %></td>
-        <td><%= faculty.desc %></td>
-        <td><%= faculty.office %></td>
-        <td><%= faculty.phone_no %></td>
-        <td><%= faculty.email %></td>
-        <td><%= link_to 'Show', faculty %></td>
-        <td><%= link_to 'Edit', edit_faculty_path(faculty) %></td>
-        <td><%= link_to 'Destroy', faculty, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+      
+        <b><%= link_to "#{faculty.name}", faculty %></b> <br>
+        <b>Department</b><br>
+        <%= faculty.dept %><br>
+        <b>About <%="#{faculty.name}"%></b><br>
+        <%= faculty.desc %><br>
+        <b>Office</b><br>
+        <%= faculty.office %><br>
+        <b>Phone no</b><br>
+        <%= faculty.phone_no %><br>
+        <b>Email</b><br>
+        <%= faculty.email %><br>
+        <br>
+        <br>
+        <br>
     <% end %>
-  </tbody>
-</table>
+
 
 <br>
 
