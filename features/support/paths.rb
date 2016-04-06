@@ -22,7 +22,8 @@ module NavigationHelpers
       if $1== 'Publications'
         publications_path
       end
-    
+    when /^the faculty signup page/
+      new_faculty_path
    
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
