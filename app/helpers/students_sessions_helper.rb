@@ -21,13 +21,13 @@ def student_log_in(student)
   
   
   def remember(student)
-    remember
+    student.remember
     cookies.permanent.signed[:student_id] = student.id
-    cookies.permanent[:remember_token] = remember_token
+    cookies.permanent[:remember_token] = student.remember_token
   end
   
   def forget(student)
-    forget
+    student.forget
     cookies.delete(:student_id)
     cookies.delete(:remember_token)
   end

@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'student_sessions/new'
+  get 'students_sessions/new'
 
   get 'sessions/new'
 
