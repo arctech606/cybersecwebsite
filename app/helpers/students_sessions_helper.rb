@@ -1,13 +1,13 @@
 module StudentsSessionsHelper
-def student_log_in(student)
+  def student_log_in(student)
     session[:student_id] = student.id
   end
   
   def current_student
     if (student_id = session[:student_id])
-      @current_student ||= student.find_by(id: student_id)
+      @current_student ||= Student.find_by(id: student_id)
     elsif (student_id = cookies.signed[:student_id])
-      student = student.find_by(id: student_id)
+      student = Student.find_by(id: student_id)
       if student && student.authenticated?(cookies[:remember_token])
         student_log_in student
         @current_student = student
@@ -32,7 +32,7 @@ def student_log_in(student)
     cookies.delete(:remember_token)
   end
   
-  def log_out
+  def student_log_out
     forget(current_student)
     session.delete(:student_id)
     @current_student = nil
