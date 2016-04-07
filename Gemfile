@@ -53,6 +53,8 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
+  gem 'factory_girl_rails'
+
   gem 'simplecov', :require => false
   gem 'codeclimate-test-reporter', require: nil
 end
