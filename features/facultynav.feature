@@ -5,11 +5,11 @@ Feature: Navigate through the various faculty sections
   so that I can contact them for my research
 Background: Faculties in database
   Given the following faculties exist in database
-  | name         | dept   | desc         | email        | office   | phone_no |
-  | Sagar        | CSCE   | George Lucas |   s@tamu.edu | 401      |979985738 |
-  | Sujoy        | EE     | Ridley Scott |   b@tamu.edu | 302      |7818      |
-  | Shweta       | CSCE   | hates cookies|   z@tamu.edu | 490      |456       |
-  | Pravir       | MECH   | George Lucas |   h@tamu.edu | 789      |456       |
+  | name         | dept   | desc         | email        | office   | phone_no | password |
+  | Sagar        | CSCE   | George Lucas |   s@tamu.edu | 401      |979985738 |1234567   |
+  | Sujoy        | EE     | Ridley Scott |   b@tamu.edu | 302      |7818      |1234567   |
+  | Shweta       | CSCE   | hates cookies|   z@tamu.edu | 490      |456       |1234567   |
+  | Pravir       | MECH   | George Lucas |   h@tamu.edu | 789      |456       |1234567   |
 @scenario1
 Scenario: view the list of faculties
   When I click on the "Find faculty experts" Link on the Navigation Bar
