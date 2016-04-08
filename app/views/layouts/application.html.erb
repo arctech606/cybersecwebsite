@@ -7,51 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <header class="navbar navbar-fixed-top navbar-inverse roster">
-    <div class="container-fluid">
-      <div class= "headtitle">
-        <h1>TEXAS A & M CYBERSECURITY CENTER</h1>
-      </div>
-       <nav>
-        <ul class="nav navbar-nav navbar-right">
-          <li> <%= link_to "Home",'/' %> </li>
-          <li> <%= link_to "About us","#" %> </li>
-          <li> <%= link_to "Research",publications_path %> </li>
-          <li> <%= link_to "Education",educations_path %> </li>
-          <li> <%= link_to "Partnerships","#" %> </li>
-          <li> <%= link_to "Events",events_path %> </li>
-          <li> <%= link_to "Students corner","#" %> </li>
-          <li> <%= link_to "Find faculty experts",faculties_path %> </li>
-          <% if logged_in? %>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              Account <b class="caret"></b>
-            </a>
-            <ul class="dropdown-menu">
-              <li><%= link_to "Profile", current_faculty %></li>
-              <li><%= link_to "Edit my profile", faculty_path(session[:faculty_id]) %></li>
-              <li class="divider"></li>
-              <li>
-                <%= link_to "Log out", logout_path, method: "delete" %>
-              </li>
-            </ul>
-          </li>
-          <% else %>
-          <li><%= link_to "faculty login",login_path %></li>
-          <li><%= link_to "student login","#" %></li>
-          <% end %>
-        </ul>
-        
-      </nav>
-      
-    </div>
-    
-  </header>
-  <div class="container-fluid">
-      <% flash.each do |message_type, message| %>
-        <div class="alert alert-<%= message_type %>"><%= message %></div>
-      <% end %>
-      <%= yield %>
+  <%= render 'shared/navbar' %>
+  <div class= "main-page-content <%= controller.controller_name %>">
   </div>
+  
 </body>
 </html>
