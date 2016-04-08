@@ -35,3 +35,12 @@ FactoryGirl.define do
    end 
 end
 
+
+FactoryGirl.define do
+    factory :research do
+        name "SSS"
+        desc "1234"
+        sponsor "sdsd"
+        
+   end 
+end
