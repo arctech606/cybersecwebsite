@@ -27,7 +27,7 @@ FactoryGirl.define do
 end
 
 FactoryGirl.define do
-    factory :Event do
+    factory :event do
         name "SSS"
         date "1234"
         desc "sdsd"
