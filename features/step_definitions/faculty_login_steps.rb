@@ -55,8 +55,6 @@ Given(/^I haven't logged in$/) do
   expect(Faculty.find_by(:name =>'radnom')).to be_nil
 end
 
-Then(/^I must see the "([^"]*)" and "([^"]*)" options on the navbar$/) do |arg1, arg2|
-  expect(page).to have_content(arg1)
-  expect(page).to have_content(arg2)
+Then(/^I must see main homepage$/) do
+ '/'  
 end
-

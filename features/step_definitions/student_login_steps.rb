@@ -50,7 +50,7 @@ Then(/^I must be redirected to login page$/) do
   login_path
 end
 
-Given(/^I haven't logged in$/) do
+Given(/^I have not logged in$/) do
   expect(Student.find_by(:name =>'radnom')).to be_nil
 end
 

@@ -8,7 +8,7 @@ Background: Students in database
   | Sagar        | CSCE   | George Lucas |   s@tamu.edu | 1234567  |
 @scenario1
 Scenario: I am not logged in or a user
-  Given I haven't logged in
+  Given I have not logged in
   Then I must see the main homepage
 @scenario2
 Scenario: Creating an account

@@ -16,6 +16,9 @@ FactoryGirl.define do
     name "Sagar"
     dept "CSCE"
     desc "help"
+    email "ss@ss.com"
+    password "new12345"
+    password_confirmation "new12345"
   end 
 end
 

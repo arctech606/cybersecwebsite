@@ -10,7 +10,7 @@ Background: Faculties in database
 @scenario1
 Scenario: I am not logged in or a user
   Given I haven't logged in
-  Then I must see the "faculty login" and "student login" options on the navbar
+  Then I must see main homepage
 @scenario2
 Scenario: Creating an account
   Given I am on the faculty signup page
