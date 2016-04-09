@@ -4,7 +4,7 @@ Given(/^the following students exist in database$/) do |table|
   end
 end
 
-Given(/^I have entered all the details correctly$/) do
+Given(/^I have entered all the details correctly as expected$/) do
    fill_in('student_name', :with => 'John')
    fill_in('student_dept', :with => 'Dept')
    fill_in('student_desc', :with => 'Really long desc')
@@ -15,11 +15,11 @@ Given(/^I have entered all the details correctly$/) do
    click_button('Create Account')
 end
 
-Then(/^I should be directed to my homepage$/) do
+Then(/^I should be directed to my homepage as a student$/) do
     students_path(Student.find_by(:name => 'John'))
 end
 
-Given(/^I have entered incorrect details$/) do
+Given(/^I have entered incorrect details as a student$/) do
   click_button('Create Account')
 end
 
@@ -31,30 +31,30 @@ Given(/^I am a signed\-up student$/) do
   Student.find_by(:name =>'Sagar').should_not be_nil
 end
 
-Given(/^I enter correct credentials$/) do
+Given(/^I enter correct credentials as a student$/) do
   fill_in('session_email', :with => 's@tamu.edu')
   fill_in('session_password', :with => '1234567')
   click_button('Log in')
 end
 
-Then(/^I must be on my homepage$/) do
+Then(/^I must be on my homepage as a student$/) do
   student_path(Student.find_by(:name => 'Sagar'))
 end
 
-Given(/^I enter incorrect credentials$/) do
+Given(/^I enter incorrect credentials as a student$/) do
   fill_in('session_email', :with => 's@tamu.edu')
   fill_in('session_password', :with => '12345678')
   click_button('Log in')
 end
-Then(/^I must be redirected to login page$/) do
+Then(/^I must be redirected to login page as a student$/) do
   login_path
 end
 
-Given(/^I have not logged in$/) do
+Given(/^I have not logged in as a student$/) do
   expect(Student.find_by(:name =>'radnom')).to be_nil
 end
 
-Then(/^I must see the main homepage$/) do
+Then(/^I must see the main homepage as a student$/) do
  '/'  
 end
 

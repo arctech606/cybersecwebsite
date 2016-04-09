@@ -16,6 +16,10 @@ module NavigationHelpers
     when /^my|the homepage$/
       students_path
       
+    when /^the login page as a student$/
+      student_login_path
+      
+      
     when /^the "(.*)" page/
       if $1 =='Students'
         students_path
