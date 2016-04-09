@@ -42,17 +42,15 @@ end
 
 RSpec.describe PublicationsController, :type => :controller do
 
-  
-
-  describe 'NEW/UPDATE EVENT' do
+    describe 'NEW/UPDATE EVENT' do
    
     it 'should call update_attributes and redirect' do
         
-      @e1 = double('Publication', :name => "US", :abstract => "elfp", :keywords => "lll",:id =>'9')
-      allow(Publication).to receive(:find).with('9').and_return(@e1)
-      #expect(@e1).to receive(:update_attributes!).and_return(true)
-      #put :update, {:id => '1', :event => @e1}
-      #expect(response).to redirect_to(event_path(@e1))
+      @publication = FactoryGirl.create(:publication)
+      put :update, id: @publication, 
+        publication: FactoryGirl.attributes_for(:publication, name: "Larry")
+      @publication.reload
+      @publication.name.should eq("Larry")
     end
   end
   
@@ -66,19 +64,24 @@ RSpec.describe PublicationsController, :type => :controller do
   describe 'CREATE/DELETE' do
     it 'DELETE' do
         
-      e1 = double('Publication', :name => "S", :abstract => "hfp", :keywords => "halll",:id =>'3' )
-      allow(Publication).to receive(:find).with('3').and_return(e1)
-      expect(e1).to receive(:destroy)
-      delete :destroy, {:id => '3'}
+       e2=FactoryGirl.create(:publication,:name => "US23", :abstract => "CSCE", :keywords => "12345", :id =>'3' )
+      allow(Publication).to receive(:find).with('3').and_return(e2)
+      expect(e2).to receive(:destroy)
+  
+      delete :destroy, :id => e2.id
     end
     it 'CREATE' do
-      e12 = double('Publication', :name => "SSS", :abstract => "helfp", :keywords => "hall" ,:id =>'2' )
-      allow(Publication).to receive(:create).with('2').and_return(e12)
-      #post :create, {:id => '2'}
+      expect{
+        post :create, publication: FactoryGirl.attributes_for(:publication)
+      }.to change(Publication,:count).by(1)
     end
     
   end
 
+
+  
+   
+    
 
 end
 
