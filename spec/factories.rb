@@ -7,6 +7,7 @@ FactoryGirl.define do
     phone_no "1234"
     email "ss@ss.com"
     password "new12345"
+    password_confirmation "new12345"
   end 
 end
 
@@ -37,10 +38,8 @@ end
 
 
 FactoryGirl.define do
-    factory :research do
+    factory :research_interest do
         name "SSS"
-        desc "1234"
-        sponsor "sdsd"
         
    end 
 end

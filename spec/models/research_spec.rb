@@ -1,23 +1,17 @@
 require 'spec_helper'
 
 describe ResearchInterest do
-  describe 'Resarch Model Test' do
+  describe 'Research Model Test' do
     context "Happy path: Non-empty researchInterest" do
       before(:each) do
-        @e1 = FactoryGirl.create(:research, name: "S",sponsor: "helfp", keyword: "hall")
+        @e1 = FactoryGirl.create(:research_interest, name: "S")
         @e1.save
-        @e2 = FactoryGirl.create(:research, name: "W", sponsor: "lol1", keyword: "uu")
-        @e3 = FactoryGirl.create(:research, name:  "R",sponsor: "lol2", keyword: "dd")
+        @e2 = FactoryGirl.create(:research_interest, name: "W")
+        @e3 = FactoryGirl.create(:research_interest, name:  "R")
        # @e4 = FactoryGirl.create(:research, name:  "R", desc: nil, date: "12-23-43", venue: "Bryan")
       end
 
-      it 'with desc field non-empty' do 
-        expect(@e1).not_to be_nil
-        expect(@e2).not_to be_nil
-        expect(@e3).not_to be_nil
-        
-      end
-      
+     
       it 'with name field non-empty' do 
         expect(@e1.name).to eq("S")
         expect(@e2.name).to eq("W")
