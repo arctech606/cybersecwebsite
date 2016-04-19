@@ -25,7 +25,8 @@ class FacultiesController < ApplicationController
   # POST /faculties.json
   def create
     @faculty = Faculty.new(faculty_params)
-
+    fu= Student.find(1)
+    #@faculty.students << fu
     respond_to do |format|
       if @faculty.save
         format.html { redirect_to @faculty, notice: 'Faculty was successfully created.' }

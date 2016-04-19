@@ -10,7 +10,6 @@ class CreateFaculties < ActiveRecord::Migration
       t.string :email
       t.references :research_interest
       t.references :project
-      t.references :student
       t.references :publication
       
       t.timestamps null: false

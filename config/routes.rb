@@ -16,7 +16,8 @@ Rails.application.routes.draw do
   get 'login' => 'sessions#new'
   post 'login' =>'sessions#create'
   delete 'logout' => 'sessions#destroy'
-  
+  get 'uin' => 'students#uin'
+  get 'uin_search_results' => 'students#uin_search_results'
   resources :students
   get 'student_login' => 'students_sessions#new'
   post 'student_login' => 'students_sessions#create'
