@@ -192,3 +192,35 @@ pub183= Publication.create(:name=> "Sensitivity Analysis of Real Time Locational
 pub184= Publication.create(:name=> "Seven Months with the Devils: A Long Term Study of Content Polluters on Twitter", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
 pub185= Publication.create(:name=> "Uipicker: User input privacy identification in mobile applications", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
 pub186= Publication.create(:name=> "Uncovering Crowdsourced Manipulation of Online Reviews", :abstract=>"xyz",:keywords=>"Non Technical CD Issues")
+
+e1 = Education.create(:courses_offered => " Programming I" ,:course_number=>"CSCE 110" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"A")
+e2 = Education.create(:courses_offered => " Structured Programming in C" ,:course_number=>"CSCE 206" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"A")
+e3 = Education.create(:courses_offered => " Security and Ethics in the Digital World" ,:course_number=>"TCMG 110" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"A")
+e3 = Education.create(:courses_offered => " Operating Systems" ,:course_number=>"CSCE 410" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"A")
+e4 =Education.create(:courses_offered => " Software Engineering" ,:course_number=>"CSCE 431" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"A")
+e5 =Education.create(:courses_offered => " Hnr-compiler Design " ,:course_number=>"CSCE 434" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"A")
+e6 =Education.create(:courses_offered => " Introduction to Program Design and Concepts " ,:course_number=>"CSCE 121" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"B")
+e7 =Education.create(:courses_offered => " Data Structures and Algorithms (Implementation in C++) " ,:course_number=>"CSCE 221" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"B")
+e8 =Education.create(:courses_offered => " Introduction to Computer Systems  " ,:course_number=>"CSCE 313" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"B")
+e9 =Education.create(:courses_offered => " Programming Studio " ,:course_number=>"CSCE 315" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"B")
+e10 =Education.create(:courses_offered => " Operating Systems " ,:course_number=>"CSCE 410" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"B")
+e11 =Education.create(:courses_offered => " Networks and Distributed Processing " ,:course_number=>"CSCE 463" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"B")
+e12 =Education.create(:courses_offered => " Technology and End-User Support " ,:course_number=>"TCMG 272" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"C")
+e13 =Education.create(:courses_offered => "  Distance Networking for Training and Development " ,:course_number=>"TCMG 274" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"C")
+e14 =Education.create(:courses_offered => " UNIX System Administration Practices " ,:course_number=>"TCMG 303" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"C")
+e15 =Education.create(:courses_offered => " Security and Ethics in the Digital World " ,:course_number=>"TCMG 308" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"C")
+e16 =Education.create(:courses_offered => "  Database Systems Administration " ,:course_number=>"TCMG 316" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"C")
+e17 =Education.create(:courses_offered => "  Managing Technical Networks " ,:course_number=>"TCMG 476" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"C")
+e18 =Education.create(:courses_offered => "  Database Systems and Applications " ,:course_number=>"CSCE 603" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"D")
+e19 =Education.create(:courses_offered => "  Compiler Design " ,:course_number=>"CSCE 605" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"D")
+e20 =Education.create(:courses_offered => "  Software Engineering " ,:course_number=>"CSCE 606" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"D")
+e21 =Education.create(:courses_offered => "  Database Systems " ,:course_number=>"CSCE 608" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"D")
+e22 =Education.create(:courses_offered => "   Operating Systems and Applications " ,:course_number=>"CSCE 613" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"D")
+e23 =Education.create(:courses_offered => "  Computer Architecture " ,:course_number=>"CSCE 614" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"D")
+
+
+
+
+
+
+

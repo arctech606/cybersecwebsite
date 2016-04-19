@@ -3,14 +3,16 @@
 <a name='tag1'></a>
 <a name='tag2'></a>
 <a name='tag3'></a>
-<br>
-<a href="#tag0"><h2>COURSE REQUIREMENTS FOR CYBERSECURITY MINOR FIELD OF STUDY</h2></a>
-<br>
-<p style="page-break-after:always;">The Cybersecurity Minor is designed to appeal to both less technically-oriented and more technically-oriented undergraduate students, across multiple departments, in multiple colleges. All students who enroll in the minor will acquire a basic understanding of programming, and a firmly grounded understanding of cybersecurity, to include cyber ethics. Due to the interdisciplinary nature of cybersecurity this minor includes 20 undergraduate courses from colleges across the University. The inclusion of these courses in the minor will allow students to specialize in the area of cybersecurity that is most closely aligned with their respective interests and their degree plans.
+
+<a class= "header_text" href="#tag0"><h2>COURSE REQUIREMENTS FOR CYBERSECURITY MINOR FIELD OF STUDY</h2></a>
+
+<p>The Cybersecurity Minor is designed to appeal to both less technically-oriented and more technically-oriented undergraduate students, across multiple departments, in multiple colleges. All students who enroll in the minor will acquire a basic understanding of programming, and a firmly grounded understanding of cybersecurity, to include cyber ethics. Due to the interdisciplinary nature of cybersecurity this minor includes 20 undergraduate courses from colleges across the University. The inclusion of these courses in the minor will allow students to specialize in the area of cybersecurity that is most closely aligned with their respective interests and their degree plans.
 Below find links to the worksheet and application forms used by students to apply for a Cybersecurity Minor. The worksheet is to be used by the students and the Cybersecurity Center Designation and Minor Coordinator to ensure that all Cybersecurity Minor Field of Study requirements are met.
-Available to all students pursuing a Bachelor of Science (B.S.) and a Bachelor of Arts (B.A.)</p>
-<br>
+Available to all students pursuing a Bachelor of Science (B.S.) and a Bachelor of Arts (B.A.)
+</p>
+
 <h3>Available to all students pursuing a Bachelor of Science (B.S.) and a Bachelor of Arts (B.A.)</h3>
+<p></p>
 <div class="col-md-6 col-md-offset-3">
 <table>
   <thead>
@@ -23,12 +25,10 @@ Available to all students pursuing a Bachelor of Science (B.S.) and a Bachelor o
   </thead>
 
   <tbody>
-    <% @educations.each do |education| %>
+    <% Education.where(:course_category => "A").each do |education| %>
       <tr>
         <td><%= education.courses_offered %></td>
-       
         <td><%= education.course_number %></td>
-  
         <td><%= education.semester_offered %></td>
         <td><%= link_to 'Show', education %></td>
         <td><%= link_to 'Edit', edit_education_path(education) %></td>
@@ -38,20 +38,16 @@ Available to all students pursuing a Bachelor of Science (B.S.) and a Bachelor o
   </tbody>
 </table>
 </div>
+<div class="col-md-12">
+  <h2><a href="#tag1" >COURSE REQUIREMENTS FOR UNDERGRADUATE CYBERSECURITY DESIGNATION (THEORY)</a></h2>
 
-
-<br>
-<br>
-<br>
-
-<h2><a href="#tag1">COURSE REQUIREMENTS FOR UNDERGRADUATE CYBERSECURITY DESIGNATION (THEORY)</a></h2>
-<br>
-<p style="page-break-after:always;">The Undergraduate Cybersecurity Designation (Theory) is designed to provide a broad technically-oriented education, firmly grounded in theory, for students who intends to pursue a career involving cybersecurity, or more broadly, software and system development. These students will be equipped to pursue employment in a variety of both private and public settings. They will be able to engage in either research, development, or operations involving information or operational technologies.  Many of these students will continue their education, pursuing advanced degrees. The designation focuses on classical computing theory, with an emphasis on software development and application. This Designation focuses on the application of computer science, computer engineering, and cybersecurity theories.
+<p>The Undergraduate Cybersecurity Designation (Theory) is designed to provide a broad technically-oriented education, firmly grounded in theory, for students who intends to pursue a career involving cybersecurity, or more broadly, software and system development. These students will be equipped to pursue employment in a variety of both private and public settings. They will be able to engage in either research, development, or operations involving information or operational technologies.  Many of these students will continue their education, pursuing advanced degrees. The designation focuses on classical computing theory, with an emphasis on software development and application. This Designation focuses on the application of computer science, computer engineering, and cybersecurity theories.
 Below find links to the worksheet and application forms used by students to apply for a Cybersecurity Designation. The worksheet is to be used by the students and the Cybersecurity Center Designation and Minor Coordinator to ensure that all Undergraduate Cybersecurity Designation (Theory) requirements are met.
 Available to students pursuing a Bachelor of Science (B.S.) or Bachelor of Arts (B.A.)</p>
 
-<br>
-<h3><p>Required Computer Science Courses (must take all eight courses)</p></h3>
+<h3>Required Computer Science Courses (must take all eight courses)</h3>
+</div>
+
 <div class="col-md-6 col-md-offset-3">
 <table>
   <thead>
@@ -64,7 +60,7 @@ Available to students pursuing a Bachelor of Science (B.S.) or Bachelor of Arts 
   </thead>
 
   <tbody>
-    <% @educations.each do |education| %>
+    <% Education.where(:course_category => "B").each do |education| %>
       <tr>
         <td><%= education.courses_offered %></td>
         <td><%= education.course_number %></td>
@@ -78,14 +74,17 @@ Available to students pursuing a Bachelor of Science (B.S.) or Bachelor of Arts 
 </table>
 </div>
 
-<br>
-<a href="#tag2"><h2>COURSE REQUIREMENTS FOR UNDERGRADUATE CYBERSECURITY DESIGNATION (THEORY)</h2></a>
-</br>
+<div class="col-md-12">
+  <a href="#tag2"><h2>COURSE REQUIREMENTS FOR UNDERGRADUATE CYBERSECURITY DESIGNATION (THEORY)</h2></a>
+
 <p style="page-break-after:always;">The Undergraduate Cybersecurity Designation (Theory) is designed to provide a broad technically-oriented education, firmly grounded in theory, for students who intends to pursue a career involving cybersecurity, or more broadly, software and system development. These students will be equipped to pursue employment in a variety of both private and public settings. They will be able to engage in either research, development, or operations involving information or operational technologies.  Many of these students will continue their education, pursuing advanced degrees. The designation focuses on classical computing theory, with an emphasis on software development and application. This Designation focuses on the application of computer science, computer engineering, and cybersecurity theories.
 Below find links to the worksheet and application forms used by students to apply for a Cybersecurity Designation. The worksheet is to be used by the students and the Cybersecurity Center Designation and Minor Coordinator to ensure that all Undergraduate Cybersecurity Designation (Theory) requirements are met.
-Available to students pursuing a Bachelor of Science (B.S.) or Bachelor of Arts (B.A.)</p>
-<br>
+Available to students pursuing a Bachelor of Science (B.S.) or Bachelor of Arts (B.A.)
+</p>
+
 <h3><p>Required Computer Science Courses (must take all eight courses)</p></h3>
+</div>
+
 <div class="col-md-6 col-md-offset-3">
 <table>
   <thead>
@@ -98,7 +97,7 @@ Available to students pursuing a Bachelor of Science (B.S.) or Bachelor of Arts 
   </thead>
 
   <tbody>
-    <% @educations.each do |education| %>
+    <% Education.where(:course_category => "C" ).each do |education| %>
       <tr>
         <td><%= education.courses_offered %></td>
         <td><%= education.course_number %></td>
@@ -111,15 +110,19 @@ Available to students pursuing a Bachelor of Science (B.S.) or Bachelor of Arts 
   </tbody>
 </table>
 </div>
-<br>
-<a href="#tag3"><h2>COURSE REQUIREMENTS FOR GRADUATE CYBERSECURITY DESIGNATION</h2></a>
-<p style="page-break-after:always;">The Graduate Cybersecurity Designation is designed to provide an in-depth and technically-oriented education, firmly grounded in theory, for graduate students who intend to pursue a career involving cybersecurity, or more broadly, software and system development. These students will be equipped to pursue employment in a variety of both private and public settings.  In particular, they will be ideally suited to engage in basic and applied research in academic, government, or public settings.
+<div class="col-md-12">
+  <a href="#tag3"><h2>COURSE REQUIREMENTS FOR GRADUATE CYBERSECURITY DESIGNATION</h2></a>
+<p style="page-break-after:always;">
+The Graduate Cybersecurity Designation is designed to provide an in-depth and technically-oriented education, firmly grounded in theory, for graduate students who intend to pursue a career involving cybersecurity, or more broadly, software and system development. These students will be equipped to pursue employment in a variety of both private and public settings.  In particular, they will be ideally suited to engage in basic and applied research in academic, government, or public settings.
 Below find links to the worksheet and application forms used by students to apply for a Cybersecurity Designation. The worksheet is to be used by the students and the Cybersecurity Center Designation and Minor Coordinator to ensure that all Graduate Cybersecurity Designation requirements are met.
-Available to students pursuing a Master’s of Science (M.S.) or Doctorate of Philosophy (Ph.D.)</p>
+Available to students pursuing a Master’s of Science (M.S.) or Doctorate of Philosophy (Ph.D.)
+</p>
 
 
 <h3>Listing Coursework</h3>
-<br>
+
+</div>
+
 <div class="col-md-6 col-md-offset-3">
 <table>
   <thead>
@@ -127,12 +130,11 @@ Available to students pursuing a Master’s of Science (M.S.) or Doctorate of Ph
       <th>Courses offered</th>
       <th>Course number</th>
       <th>Semester offered</th>
-      
     </tr>
   </thead>
 
   <tbody>
-    <% @educations.each do |education| %>
+    <% Education.where(:course_category => 'D').each do |education| %>
       <tr>
         <td><%= education.courses_offered %></td>
         <td><%= education.course_number %></td>
@@ -145,10 +147,12 @@ Available to students pursuing a Master’s of Science (M.S.) or Doctorate of Ph
   </tbody>
 </table>
 </div>
-<br>
-<h1>Faculty</h1>
-<br>
+<div class="col-md-12">
+  <h1>Faculty</h1>
+
 <p style="page-break-after:always;">Texas A&M faculty are involved in research that addresses a broad array of important cybersecurity topics. Moreover, the sheer number of publications produced by these scholars, as well as the thousands of citations to their scholarly works combined, indicate that A&M researchers are making significant contributions to the advancement of cybersecurity knowledge. Because the A&M faculty is so large and diverse, their research is not restricted to a small number of specific areas or approaches that may lose their relevance over time. The cybersecurity research topics addressed by A&M faculty span the full range of scholarly inquiry, from foundational basic research to problem-oriented applied research.
 </p>
 
 <%= link_to 'New Education', new_education_path %>
+</div>
+
