@@ -45,8 +45,24 @@ section {
     font-weight: normal;
   }
 }
+header_text{
+  position:relative;
+  top:150px;
+}
+position_proper{
+  position:absolute;
+  top:450px;
+  left: -150px;
+  width:100%;
+}
 
 #session_remember_me {
   width: auto;
   margin-left: 0;
+}
+table td{
+  padding:20px;
+}
+table th{
+  padding:20px;
 }
