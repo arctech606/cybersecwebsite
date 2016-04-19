@@ -17,11 +17,15 @@ class StudentsController < ApplicationController
   end
   def student_confirm
     student = session[:student]
-    
   end
   def uin_search_results
     uid=params[:uin]
     @student=Student.find_by_uin(uid)
+    if @student == nil
+      flash[:notice] = "No student with the UIN found"
+      redirect_to uin_path
+    end
+    session[:uin] = uid
   end
   # GET /students/new
   def new

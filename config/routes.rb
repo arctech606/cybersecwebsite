@@ -20,6 +20,7 @@ Rails.application.routes.draw do
   get 'uin_search_results' => 'students#uin_search_results'
   resources :students
   get 'student_login' => 'students_sessions#new'
+  get 'associate_student'=> 'faculties#associate_student'
   post 'student_login' => 'students_sessions#create'
   delete 'student_logout' => 'students_sessions#destroy'
 

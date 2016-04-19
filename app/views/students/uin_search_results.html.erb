@@ -22,5 +22,7 @@
 </p>
 
 <p>
-    <%= submit_tag 'confirm', :method => 'get', :name => nil,:class => 'btn btn_primary' %>
+    <%= form_tag associate_student_path, :method => 'get' do %>
+    <%= submit_tag 'confirm', :name => nil,:class => 'btn btn_primary' %>
+    <%end%>
 </p>
