@@ -1,17 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<div class=papertitle>
-  <h1>Listing Publications</h1>
-</div>
-<%=link_to "Sort by name",{:controller => 'publications'  }%>
-
 <br>
 
-<%= link_to 'New Publication', new_publication_path %>
 <%= form_tag publications_path, :method => 'get' do %>
   <p>
-    <%= submit_tag "Search", :name => nil %>
-    <%= text_field_tag :search, params[:search], size: 160 %>
+    <center><%= text_field_tag :search, params[:search], size: 200 %></center>
+    <br>
+    <div class=searchBarProperty>
+      <%= submit_tag "Search", class: "btn btn-primary" %>
+    </div>
   </p>
 <% end %>
 
@@ -25,7 +22,6 @@
       <br>
       Key Words:<%= publication.keywords %>
       <br>
-      <%= link_to "Destroy", publication, method: :delete, data: { confirm: 'Are you sure?' } %>
     </tr>
   <% end %>
 </ul>

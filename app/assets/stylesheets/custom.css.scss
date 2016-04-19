@@ -3,8 +3,6 @@
 
 body {
   padding-top: 200px;
-  background:url(railsdog.jpg);
-  background-repeat: no-repeat;
 }
 
 section {
@@ -13,6 +11,10 @@ section {
 
 .headtitle h1{
   color:white;
+  background-position: center;
+  background-image: url("tamucyberlogo.png");
+  background-repeat: no-repeat;
+  padding-top: 80px;
 }
 
 .headtitle h1{
@@ -36,9 +38,10 @@ section {
 }
 
 .Directors_message{
-  position:relative;
-  font-size:larger;
-  top:100px;
+  padding: 60px;
+  width: 800px;
+  height: 300px;
+  text-align: justify;
 }
 
 .Directors_message_title{
