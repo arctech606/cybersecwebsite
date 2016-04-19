@@ -1,0 +1,6 @@
+<%= form_tag uin_search_results_path, :method => 'get' do %>
+  <p>
+    <%= text_field_tag :uin, params[:uin] %>
+    <%= submit_tag "Search student by UIN", :name => nil,:class => 'btn btn_primary' %>
+  </p>
+<% end %>
