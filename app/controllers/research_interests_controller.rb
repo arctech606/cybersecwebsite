@@ -1,0 +1,2 @@
+class ResearchInterestsController < ApplicationController
+end
