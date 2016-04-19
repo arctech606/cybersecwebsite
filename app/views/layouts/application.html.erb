@@ -18,6 +18,19 @@
           <li> <%= link_to "About us","#" %> </li>
           <li> <%= link_to "Research",publications_path %> </li>
           <li> <%= link_to "Education",educations_path %> </li>
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+              Education <b class="caret"></b>
+            </a>
+            <ul class="dropdown-menu">
+              <li><%= link_to "Overview", '/' %></li>
+              <li><%= link_to "Cybersecurity Minor ", '/' %></li>
+              <li><%= link_to "Cybersecurity Theory ", '/' %></li>
+              <li><%= link_to "Cybersecurity Application ", '/' %></li>
+              <li><%= link_to "Cybersecurity Graduate ", '/' %></li>
+              <li>
+            </ul>
+          </li>
+          
           <li> <%= link_to "Partnerships","#" %> </li>
           <li> <%= link_to "Events",events_path %> </li>
           <li> <%= link_to "Students corner",'/'%> </li>
