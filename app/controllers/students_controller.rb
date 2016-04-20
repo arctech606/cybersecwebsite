@@ -15,9 +15,6 @@ class StudentsController < ApplicationController
   def uin
     
   end
-  def student_confirm
-    student = session[:student]
-  end
   def uin_search_results
     uid=params[:uin]
     @student=Student.find_by_uin(uid)

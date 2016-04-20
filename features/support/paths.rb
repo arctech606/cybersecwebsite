@@ -32,7 +32,8 @@ module NavigationHelpers
       new_faculty_path
     when /^the student signup page/
       new_student_path
-   
+    when /^the faculty profile page/
+      faculty_path(Faculty.find_by_name('Sagar'))
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

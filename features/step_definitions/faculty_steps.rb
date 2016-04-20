@@ -45,5 +45,8 @@ Then(/^I must be directed to the "([^"]*)" page for "([^"]*)"$/) do |arg1, arg2|
   if $1=='details'
     visit(faculty_path(Faculty.find_by_title($2)))
   end
+  if $1=='enter_uin'
+    visit(uin_path)
+  end
 end
 

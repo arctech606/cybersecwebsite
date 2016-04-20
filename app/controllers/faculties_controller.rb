@@ -14,13 +14,18 @@ class FacultiesController < ApplicationController
   
   def associate_student
     @faculty=Faculty.find_by_id(session[:faculty_id])
+    if @faculty == nil
+      flash[:notice] = "You're not logged in"
+      redirect_to uin_search_results_path
+    else
     @student=Student.find_by_uin(session[:uin])
     @student1=@faculty.students.find_by_uin(session[:uin])
-    if @student1 == nil
-      @faculty.students << @student
-    end
+      if @student1 == nil
+        @faculty.students << @student
+      end
     session.delete(:uin)
     redirect_to faculty_path(@faculty)
+    end
   end
 
   # GET /faculties/new
