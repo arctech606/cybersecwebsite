@@ -4,7 +4,6 @@ class CreateEducations < ActiveRecord::Migration
       t.string :courses_offered
       t.string :course_number
       t.string :semester_offered
-
       t.timestamps null: false
     end
   end

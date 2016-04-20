@@ -9,6 +9,7 @@ Rails.application.routes.draw do
   resources :educations
   resources :events
   resources :publications
+  resources :research_interests
 
   root 'homepage#index'
 
