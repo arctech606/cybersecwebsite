@@ -25,6 +25,10 @@
         1,
         null
       ],
+      "/home/ubuntu/workspace/app/helpers/research_interests_helper.rb": [
+        1,
+        null
+      ],
       "/home/ubuntu/workspace/app/helpers/sessions_helper.rb": [
         1,
         1,
@@ -114,6 +118,19 @@
         null,
         null
       ],
+      "/home/ubuntu/workspace/app/controllers/research_interests_controller.rb": [
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null
+      ],
       "/home/ubuntu/workspace/app/controllers/students_controller.rb": [
         1,
         1,
@@ -125,9 +142,24 @@
         null,
         null,
         null,
+        1,
+        null,
+        null,
         null,
         1,
         null,
+        null,
+        1,
+        0,
+        null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
         null,
         null,
         1,
@@ -188,15 +220,6 @@
         1,
         2,
         null,
-        null
-      ],
-      "/home/ubuntu/workspace/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
         null
       ],
       "/home/ubuntu/workspace/app/controllers/students_sessions_controller.rb": [
@@ -354,6 +377,17 @@
         1,
         null,
         null,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        0,
+        null,
+        null,
         null,
         1,
         0,
@@ -367,11 +401,12 @@
         null,
         1,
         1,
+        1,
         null,
-        1,
-        1,
-        2,
-        1,
+        0,
+        0,
+        0,
+        0,
         null,
         0,
         0,
@@ -683,7 +718,7 @@
         0
       ]
     },
-    "timestamp": 1460211127
+    "timestamp": 1461118178
   },
   "Cucumber Features": {
     "coverage": {
