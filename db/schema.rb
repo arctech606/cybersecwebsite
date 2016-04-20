@@ -43,7 +43,6 @@ ActiveRecord::Schema.define(version: 20160419051044) do
     t.string   "email"
     t.integer  "research_interest_id"
     t.integer  "project_id"
-    t.integer  "student_id"
     t.integer  "publication_id"
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
@@ -51,10 +50,13 @@ ActiveRecord::Schema.define(version: 20160419051044) do
     t.string   "remember_digest"
   end
 
-  create_table "faculties_students", force: :cascade do |t|
+  create_table "faculties_students", id: false, force: :cascade do |t|
     t.integer "faculty_id"
     t.integer "student_id"
   end
+
+  add_index "faculties_students", ["faculty_id"], name: "index_faculties_students_on_faculty_id", using: :btree
+  add_index "faculties_students", ["student_id"], name: "index_faculties_students_on_student_id", using: :btree
 
   create_table "projects", force: :cascade do |t|
     t.string   "name"
@@ -102,11 +104,11 @@ ActiveRecord::Schema.define(version: 20160419051044) do
     t.datetime "updated_at",           null: false
     t.integer  "research_interest_id"
     t.integer  "project_id"
-    t.integer  "faculty_id"
     t.integer  "publication_id"
     t.string   "email"
     t.string   "password_digest"
     t.string   "remember_digest"
+    t.integer  "uin"
   end
 
 end

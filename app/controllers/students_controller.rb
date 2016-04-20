@@ -6,12 +6,27 @@ class StudentsController < ApplicationController
   def index
     @student = Student.all
   end
-
   # GET /students/1
   # GET /students/1.json
   def show
   end
-
+  
+  
+  def uin
+    
+  end
+  def student_confirm
+    student = session[:student]
+  end
+  def uin_search_results
+    uid=params[:uin]
+    @student=Student.find_by_uin(uid)
+    if @student == nil
+      flash[:notice] = "No student with the UIN found"
+      redirect_to uin_path
+    end
+    session[:uin] = uid
+  end
   # GET /students/new
   def new
     @student = Student.new
@@ -69,6 +84,6 @@ class StudentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def student_params
-      params.require(:student).permit(:name, :dept, :desc,:email,:password,:password_confirmation)
+      params.require(:student).permit(:name, :dept, :desc,:email,:password,:password_confirmation,:uin)
     end
 end

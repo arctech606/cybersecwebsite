@@ -11,6 +11,17 @@ class FacultiesController < ApplicationController
   # GET /faculties/1.json
   def show
   end
+  
+  def associate_student
+    @faculty=Faculty.find_by_id(session[:faculty_id])
+    @student=Student.find_by_uin(session[:uin])
+    @student1=@faculty.students.find_by_uin(session[:uin])
+    if @student1 == nil
+      @faculty.students << @student
+    end
+    session.delete(:uin)
+    redirect_to faculty_path(@faculty)
+  end
 
   # GET /faculties/new
   def new
@@ -25,7 +36,8 @@ class FacultiesController < ApplicationController
   # POST /faculties.json
   def create
     @faculty = Faculty.new(faculty_params)
-
+    fu= Student.find(1)
+    #@faculty.students << fu
     respond_to do |format|
       if @faculty.save
         format.html { redirect_to @faculty, notice: 'Faculty was successfully created.' }

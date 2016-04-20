@@ -8,7 +8,6 @@ class CreateStudents < ActiveRecord::Migration
       t.timestamps null: false
       t.references :research_interest
       t.references :project
-      t.references :faculty
       t.references :publication
     end
   end

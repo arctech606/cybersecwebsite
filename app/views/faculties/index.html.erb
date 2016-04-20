@@ -17,6 +17,9 @@
         <%= faculty.phone_no %><br>
         <b>Email</b><br>
         <%= faculty.email %><br>
+        <% faculty.students. each do |stu| %>
+        <%= stu.name %>
+        <%end%>
         <br>
         <br>
         <br>
