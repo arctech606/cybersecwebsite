@@ -18,6 +18,7 @@ Rails.application.routes.draw do
   delete 'logout' => 'sessions#destroy'
   get 'uin' => 'students#uin'
   get 'uin_search_results' => 'students#uin_search_results'
+  get 'upload_resume' =>'faculties#upload_resume'
   resources :students
   get 'student_login' => 'students_sessions#new'
   get 'associate_student'=> 'faculties#associate_student'

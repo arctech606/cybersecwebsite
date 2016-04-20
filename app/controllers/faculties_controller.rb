@@ -36,7 +36,6 @@ class FacultiesController < ApplicationController
   # POST /faculties.json
   def create
     @faculty = Faculty.new(faculty_params)
-    fu= Student.find(1)
     #@faculty.students << fu
     respond_to do |format|
       if @faculty.save
@@ -72,7 +71,35 @@ class FacultiesController < ApplicationController
       format.json { head :no_content }
     end
   end
-
+  
+  def upload_resume
+    
+      @faculty=Faculty.find(session[:faculty_id])
+    
+      # Install this the SDK with "gem install dropbox-sdk"
+      
+      require 'dropbox_sdk'
+      
+      # Get your app key and secret from the Dropbox developer website
+      app_key = 'x39lzlcnmtz8ty3'
+      app_secret = '0gss5d1oko1vk4t'
+      
+      flow = DropboxOAuth2FlowNoRedirect.new(app_key, app_secret)
+     
+      access_token='FEjVVhOXMHIAAAAAAAAAIaNk3xr2kuVHOQL67dy_yMCBS0aoR8CXAGw7lW8CRy9a'
+      
+      client = DropboxClient.new(access_token)
+     
+      file = open(params[:cv_path])
+      resume_name='/'+ @faculty.name+'_resume'
+      response = client.put_file(resume_name, file)
+      
+      if response!=NIL
+        @upload_complete='Successful'
+      else
+         @upload_complete='failed'
+      end
+  end    
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_faculty
