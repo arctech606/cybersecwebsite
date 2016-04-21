@@ -11,7 +11,7 @@ describe ResearchInterest do
        # @e4 = FactoryGirl.create(:research, name:  "R", desc: nil, date: "12-23-43", venue: "Bryan")
       end
 
-     
+      
       it 'with name field non-empty' do 
         expect(@e1.name).to eq("S")
         expect(@e2.name).to eq("W")

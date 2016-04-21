@@ -30,8 +30,6 @@ describe Publication do
          #expect(@e4.desc).to be_nil
       end
       
-      
-      
     end
     
   end
@@ -79,9 +77,6 @@ RSpec.describe PublicationsController, :type => :controller do
   end
 
 
-  
-   
-    
 
 end
 
