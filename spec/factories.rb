@@ -31,6 +31,14 @@ FactoryGirl.define do
 end
 
 FactoryGirl.define do
+    factory :project do
+        name "SSS"
+        sponsor "spsr"
+        desc "abcd"
+   end 
+end
+
+FactoryGirl.define do
     factory :event do
         name "SSS"
         date "1234"
