@@ -17,6 +17,7 @@ FactoryGirl.define do
     dept "CSCE"
     desc "help"
     email "ss@ss.com"
+    uin "1234".to_i
     password "new12345"
     password_confirmation "new12345"
   end 
