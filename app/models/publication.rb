@@ -3,7 +3,10 @@ class Publication < ActiveRecord::Base
   validates :name, :abstract, :keywords, presence: { :message => "data not present" }
   has_and_belongs_to_many :faculties
   has_and_belongs_to_many :students
-
+  
+  extend FriendlyId
+  friendly_id :name
+  
   def self.search(search)
     if search
       self.where("keywords like ?", "%#{search}%")

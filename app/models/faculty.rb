@@ -1,4 +1,5 @@
 class Faculty < ActiveRecord::Base
+  
   validates :name, :dept, :desc, :office, :phone_no, :email, presence: { :message => "data not present" }
   has_many :projects
   has_many :publications
@@ -7,6 +8,10 @@ class Faculty < ActiveRecord::Base
   has_secure_password
   validates :password, length: { minimum: 6 }
   attr_accessor :remember_token
+  
+  extend FriendlyId
+  friendly_id :name
+  
   def Faculty.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost
