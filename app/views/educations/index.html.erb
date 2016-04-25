@@ -1,26 +1,32 @@
 <p id="notice"><%= notice %></p>
+<h1> EDUCATION </h1>
+Texas A&M has a long history of providing information assurance and cybersecurity educational opportunities for its students. Dating back to the mid-1990s, A&M faculty developed the first academic courses that employed active attack-defense laboratory exercises that emphasized the importance of hands-on activities to facilitate and accelerate student learning. This then novel approach has now been widely adopted throughout educational and training settings where cybersecurity topics are taught. A&M students have benefited directly from these educational innovations and, through their studies and associated hands-on experiences, they have consistently been able to rapidly acquire important cybersecurity knowledge and skills.
 
-<div class="details_positions">
-  <div class= "header_text" id="tag0"><h2>COURSE REQUIREMENTS FOR CYBERSECURITY MINOR FIELD OF STUDY</h2></div>
-  
-  <p>The Cybersecurity Minor is designed to appeal to both less technically-oriented and more technically-oriented undergraduate students, across multiple departments, in multiple colleges. All students who enroll in the minor will acquire a basic understanding of programming, and a firmly grounded understanding of cybersecurity, to include cyber ethics. Due to the interdisciplinary nature of cybersecurity this minor includes 20 undergraduate courses from colleges across the University. The inclusion of these courses in the minor will allow students to specialize in the area of cybersecurity that is most closely aligned with their respective interests and their degree plans.
-  Below find links to the worksheet and application forms used by students to apply for a Cybersecurity Minor. The worksheet is to be used by the students and the Cybersecurity Center Designation and Minor Coordinator to ensure that all Cybersecurity Minor Field of Study requirements are met.
-  Available to all students pursuing a Bachelor of Science (B.S.) and a Bachelor of Arts (B.A.)
-  </p>
-  
-  <h3>Available to all students pursuing a Bachelor of Science (B.S.) and a Bachelor of Arts (B.A.)</h3>
-  <div class="col-md-6">
-  <table class = "table-hover">
-    <thead>
-      <tr>
-        <th> Courses offered   </th>
-        <th> Course number   </th>
-        <th> Semester offered  </th>
-        
-      </tr>
-    </thead>
-  
-    <tbody>
+Cybersecurity Designations and the Minor Field of Study in Cybersecurity were developed by the Texas A&M Cybersecurity Center to provide selected Texas A&M students with an opportunity to acquire specific cybersecurity knowledge and skills in order to prepare them for challenges they will face, upon graduation, in their personal and professional lives. The current cybersecurity offerings include three Cybersecurity Designations and one Cybersecurity Minor Field of Study. Each of these offering are described below.
+
+<h2>Cybersecurity Curriculum Offerings</h2>
+Policy and Operations Memorandum
+<div class= "header_text" id="tag0"><h2>COURSE REQUIREMENTS FOR CYBERSECURITY MINOR FIELD OF STUDY</h2></div>
+
+<p>The Cybersecurity Minor is designed to appeal to both less technically-oriented and more technically-oriented undergraduate students, across multiple departments, in multiple colleges. All students who enroll in the minor will acquire a basic understanding of programming, and a firmly grounded understanding of cybersecurity, to include cyber ethics. Due to the interdisciplinary nature of cybersecurity this minor includes 20 undergraduate courses from colleges across the University. The inclusion of these courses in the minor will allow students to specialize in the area of cybersecurity that is most closely aligned with their respective interests and their degree plans.
+Below find links to the worksheet and application forms used by students to apply for a Cybersecurity Minor. The worksheet is to be used by the students and the Cybersecurity Center Designation and Minor Coordinator to ensure that all Cybersecurity Minor Field of Study requirements are met.
+Available to all students pursuing a Bachelor of Science (B.S.) and a Bachelor of Arts (B.A.)
+</p>
+
+<h3>Available to all students pursuing a Bachelor of Science (B.S.) and a Bachelor of Arts (B.A.)</h3>
+<p></p>
+<div class="col-md-6 col-md-offset-3">
+<table>
+  <thead>
+    <tr>
+      <th>Courses offered   </th>
+      <th>Course number   </th>
+      <th>Semester offered  </th>
+      
+    </tr>
+  </thead>
+
+  <tbody>
       <% Education.where(:course_category => "A").each do |education| %>
         <tr>
           <td><%= education.courses_offered %></td>
@@ -118,6 +124,7 @@
         <th>Course number</th>
         <th>Semester offered</th>
       </tr>
+
     </thead>
   
     <tbody>
@@ -131,11 +138,21 @@
     </tbody>
   </table>
   </div>
+  
   <div class="col-md-12">
     <h1>Faculty</h1>
   
   <p style="page-break-after:always;">Texas A&M faculty are involved in research that addresses a broad array of important cybersecurity topics. Moreover, the sheer number of publications produced by these scholars, as well as the thousands of citations to their scholarly works combined, indicate that A&M researchers are making significant contributions to the advancement of cybersecurity knowledge. Because the A&M faculty is so large and diverse, their research is not restricted to a small number of specific areas or approaches that may lose their relevance over time. The cybersecurity research topics addressed by A&M faculty span the full range of scholarly inquiry, from foundational basic research to problem-oriented applied research.
   </p>
   </div>
+
+<%= form_tag faculties_path, :method => 'get' do %>
+  <p>
+    <%= submit_tag "Find Faculty Experts", :name => nil %>
+  </p>
+<% end %>
+
+
+
 </div>
 
