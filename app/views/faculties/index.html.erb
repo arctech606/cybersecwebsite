@@ -1,31 +1,22 @@
-<p id="notice"><%= notice %></p>
+
+<div class="details_positions">
+    <p id="notice"><%= notice %></p>
 
 <h1>Faculty Experts</h1>
 
-
-
     <% @faculties.each do |faculty| %>
-      
-        <b><%= link_to "#{faculty.name}", faculty %></b> <br>
-        <b>Department</b><br>
-        <%= faculty.dept %><br>
-        <b>About <%="#{faculty.name}"%></b><br>
-        <%= faculty.desc %><br>
-        <b>Office</b><br>
-        <%= faculty.office %><br>
-        <b>Phone no</b><br>
-        <%= faculty.phone_no %><br>
-        <b>Email</b><br>
-        <%= faculty.email %><br>
-        <% faculty.students. each do |stu| %>
-        <%= stu.name %>
-        <%end%>
-        <br>
-        <br>
-        <br>
+        <div class="element_spacing">
+            <b><%= link_to "#{faculty.name}", faculty %></b> |
+            <b>Department:</b>
+            <%= faculty.dept %> | 
+            <b> Email</b>
+            <%= faculty.email %>
+        </div>
     <% end %>
 
 
 <br>
 
-<%= link_to 'New Faculty', new_faculty_path %>
+</div>
+
+

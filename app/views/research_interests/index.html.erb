@@ -1,34 +1,33 @@
 <p id="notice"><%= notice %></p>
 <a name='tag1'></a>
 <a name='tag2'></a>
-
-<h1>RESEARCH</h1>
-Texas A&M University has an internationally renowned group of faculty who are engaged in groundbreaking cybersecurity research. The University, a premier land-grant institution, also benefits from having great facilities and fantastic students, which enable much of this impressive research portfolio. The combination of great faculty, great facilities and great students ensures that A&M will soon move to the very forefront of cybersecurity research and education.
-
-
-<a href="#tag1"><h1>THEMES</h1></a>
-- Resilient Adversary-Tolerant Systems
-- Malware and Malware Infrastructure Analysis
-- Cybersecurity Assessment and Vulnerability Analysis of the “Internet of Things”
-- Predictive Cyber Modeling
-- Cryptography and Information Theory
-- The Human Dimensions of Cybersecurity
-Including: Business, Psychology and Behavioral Science, Policy and Political Science, Economics, Sociology, Cultural Georgraphy and Anthropology, Mathematics and Statistics, Law, Ethics and Philosophy, History, among others
-
-
-<a href="#tag2"><h1>APPLICATION AREAS</h1></a>
-- Critical Infrastructure Protection
-Focusing on these critical infrastructure sectors: Energy, Transportation, Emergency Services, Public Health and Agriculture
-- Interconnected and Autonomous Systems
-- Mobile Platforms and Communications
-- Privacy and Cyber Ethics
-- Cybersecurity Workforce Development and Cyber Operation
-
-<h1>Faculty</h1>
-Texas A&M faculty are involved in research that addresses a broad array of important cybersecurity topics. Moreover, the sheer number of publications produced by these scholars, as well as the thousands of citations to their scholarly works combined, indicate that A&M researchers are making significant contributions to the advancement of cybersecurity knowledge. Because the A&M faculty is so large and diverse, their research is not restricted to a small number of specific areas or approaches that may lose their relevance over time. The cybersecurity research topics addressed by A&M faculty span the full range of scholarly inquiry, from foundational basic research to problem-oriented applied research.
-
-<%= form_tag publications_path, :method => 'get' do %>
-  <p>
-    <%= submit_tag "Find Publication", :name => nil %>
-  </p>
-<% end %>
+<div class="details_positions"> 
+  <h2>RESEARCH</h2>
+  Texas A&M University has an internationally renowned group of faculty who are engaged in groundbreaking cybersecurity research. The University, a premier land-grant institution, also benefits from having great facilities and fantastic students, which enable much of this impressive research portfolio. The combination of great faculty, great facilities and great students ensures that A&M will soon move to the very forefront of cybersecurity research and education.
+  <a href="#tag1"><h2>THEMES</h2></a>
+  - Resilient Adversary-Tolerant Systems
+  - Malware and Malware Infrastructure Analysis
+  - Cybersecurity Assessment and Vulnerability Analysis of the “Internet of Things”
+  - Predictive Cyber Modeling
+  - Cryptography and Information Theory
+  - The Human Dimensions of Cybersecurity
+  Including: Business, Psychology and Behavioral Science, Policy and Political Science, Economics, Sociology, Cultural Georgraphy and Anthropology, Mathematics and Statistics, Law, Ethics and Philosophy, History, among others
+  
+  
+  <a href="#tag2"><h2>APPLICATION AREAS</h2></a>
+  - Critical Infrastructure Protection
+  Focusing on these critical infrastructure sectors: Energy, Transportation, Emergency Services, Public Health and Agriculture
+  - Interconnected and Autonomous Systems
+  - Mobile Platforms and Communications
+  - Privacy and Cyber Ethics
+  - Cybersecurity Workforce Development and Cyber Operation
+  
+  <h2>Faculty</h2>
+  Texas A&M faculty are involved in research that addresses a broad array of important cybersecurity topics. Moreover, the sheer number of publications produced by these scholars, as well as the thousands of citations to their scholarly works combined, indicate that A&M researchers are making significant contributions to the advancement of cybersecurity knowledge. Because the A&M faculty is so large and diverse, their research is not restricted to a small number of specific areas or approaches that may lose their relevance over time. The cybersecurity research topics addressed by A&M faculty span the full range of scholarly inquiry, from foundational basic research to problem-oriented applied research.
+  
+  <%= form_tag publications_path, :method => 'get' do %>
+    <p>
+      <%= submit_tag "Find Publication", :name => nil %>
+    </p>
+  <% end %>
+</div>
