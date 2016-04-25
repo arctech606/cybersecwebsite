@@ -10,7 +10,8 @@ class StudentsController < ApplicationController
   # GET /students/1.json
   def show
   end
-  
+  def students_error_display
+  end
   
   def uin
     
@@ -31,6 +32,9 @@ class StudentsController < ApplicationController
 
   # GET /students/1/edit
   def edit
+    if  !session.key?(:student_id)
+      redirect_to students_error_display_path
+    end
   end
 
   # POST /students
@@ -76,7 +80,7 @@ class StudentsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_student
-      @student = Student.find(params[:id])
+      @student = Student.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.

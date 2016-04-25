@@ -13,18 +13,22 @@ class FacultiesController < ApplicationController
   end
   
   def associate_student
-    @faculty=Faculty.find_by_id(session[:faculty_id])
-    if @faculty == nil
-      flash[:notice] = "You're not logged in"
-      redirect_to uin_search_results_path
-    else
-    @student=Student.find_by_uin(session[:uin])
-    @student1=@faculty.students.find_by_uin(session[:uin])
-      if @student1 == nil
-        @faculty.students << @student
+    if session.key?(:faculty_id)
+      @faculty=Faculty.find_by_id(session[:faculty_id])
+      if @faculty == nil
+        flash[:notice] = "You're not logged in"
+        redirect_to uin_search_results_path
+      else
+      @student=Student.find_by_uin(session[:uin])
+      @student1=@faculty.students.find_by_uin(session[:uin])
+        if @student1 == nil
+          @faculty.students << @student
+        end
+      session.delete(:uin)
+      redirect_to faculty_path(@faculty)
       end
-    session.delete(:uin)
-    redirect_to faculty_path(@faculty)
+    else
+      redirect_to error_display_path
     end
   end
 
@@ -35,6 +39,9 @@ class FacultiesController < ApplicationController
 
   # GET /faculties/1/edit
   def edit
+    if  !session.key?(:faculty_id)
+      redirect_to error_display_path
+    end
   end
 
   # POST /faculties
@@ -56,15 +63,19 @@ class FacultiesController < ApplicationController
   # PATCH/PUT /faculties/1
   # PATCH/PUT /faculties/1.json
   def update
-    respond_to do |format|
-      if @faculty.update(faculty_params)
-        format.html { redirect_to @faculty, notice: 'Faculty was successfully updated.' }
-        format.json { render :show, status: :ok, location: @faculty }
-      else
-        format.html { render :edit }
-        format.json { render json: @faculty.errors, status: :unprocessable_entity }
+    if session.key?(:faculty_id)
+      respond_to do |format|
+        if @faculty.update(faculty_params)
+          format.html { redirect_to @faculty, notice: 'Faculty was successfully updated.' }
+          format.json { render :show, status: :ok, location: @faculty }
+        else
+          format.html { render :edit }
+          format.json { render json: @faculty.errors, status: :unprocessable_entity }
+        end
       end
-    end
+    else
+      redirect_to error_display_path
+    end 
   end
 
   # DELETE /faculties/1
@@ -76,7 +87,8 @@ class FacultiesController < ApplicationController
       format.json { head :no_content }
     end
   end
-  
+  def error_display
+  end
   def upload_resume
     
       @faculty=Faculty.find(session[:faculty_id])
@@ -108,7 +120,7 @@ class FacultiesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_faculty
-      @faculty = Faculty.find(params[:id])
+      @faculty = Faculty.friendly.find(params[:id])
     end
 
     # Never trust parameters from the scary internet, only allow the white list through.
