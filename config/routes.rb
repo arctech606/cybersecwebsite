@@ -11,8 +11,10 @@ Rails.application.routes.draw do
   resources :publications
   resources :research_interests
   resources :homepage
-  resources :events
-
+  get 'aboutus' => 'homepage#aboutus'
+  get 'partnership' => 'homepage#partnership'
+  get 'studentscorner' => 'homepage#studentscorner'
+  
   root 'homepage#index'
 
   resources :faculties
