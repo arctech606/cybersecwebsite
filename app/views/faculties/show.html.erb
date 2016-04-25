@@ -40,11 +40,10 @@ Name: <%= link_to "#{student.name}",student_path(student) %><br>
 <%= form_tag upload_resume_path, :method => 'get' do %>
   <p>
     <%= text_field_tag :cv_path, params[:cv_path] %>
-    <%= submit_tag "Upload CV", :name => nil %>
+    <%= submit_tag "Upload CV", :name => nil %></br>
   </p>
 <% end %>
-<%end%>
-
-
+<%= link_to 'New Event', new_event_path %></br>
 <%= link_to 'Edit', edit_faculty_path(@faculty) %> |
+<%end%>
 <%= link_to 'Back', faculties_path %>
