@@ -22,7 +22,6 @@ section {
   font: larger;
   text-align: center;
 }
-
 .headtitle h1.thick{
   font-weight: bold;  
 }
@@ -38,14 +37,11 @@ section {
 }
 
 .Directors_message{
-  padding: 60px;
-  width: 800px;
-  height: 300px;
   text-align: justify;
+  width:70%;
 }
 
 .Directors_message_title{
-  width: 60%;
   font-size: smaller;
 }
 
@@ -92,10 +88,12 @@ position_proper{
 }
 table td{
   padding:20px;
+  width:60px;
 }
 table th{
   padding:20px;
 }
+
 .Footer-Text
 {
 	color: #000000;
@@ -142,4 +140,15 @@ footer ul {
 footer ul li {
   float: left;
   margin-left: 15px;
+
+.details_positions{
+  position:relative;
+  left:5%;
+  width:95%;
+}
+.element_spacing{
+  padding-top:10px;
+  padding-bottom:10px;
+  margin:0px;
+
 }

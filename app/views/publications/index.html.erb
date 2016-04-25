@@ -1,28 +1,29 @@
-<p id="notice"><%= notice %></p>
-
-<br>
-
-<%= form_tag publications_path, :method => 'get' do %>
-  <p>
-    <center><%= text_field_tag :search, params[:search], size: 200 %></center>
-    <br>
-    <div class=searchBarProperty>
-      <%= submit_tag "Search", class: "btn btn-primary" %>
-    </div>
-  </p>
-<% end %>
-
-<ul>
-  <% @publications.each do |publication| %>
-    <tr>
-      <div class=papertitle>
-        <li><%= link_to publication.name.to_s, publication %></li>
+<div class="details_positions">
+  <p id="notice"><%= notice %></p>
+  
+  <br>
+  
+  <%= form_tag publications_path, :method => 'get' do %>
+    <p>
+      <center><%= text_field_tag :search, params[:search], size: 200 %></center>
+      <br>
+      <div class=searchBarProperty>
+        <%= submit_tag "Search", class: "btn btn-primary" %>
       </div>
-      Abstract:<%= publication.abstract %>
-      <br>
-      Key Words:<%= publication.keywords %>
-      <br>
-    </tr>
+    </p>
   <% end %>
-</ul>
-
+  
+  <ul>
+    <% @publications.each do |publication| %>
+      <tr>
+        <div class=papertitle>
+          <li><%= link_to publication.name.to_s, publication %></li>
+        </div>
+        Abstract:<%= publication.abstract %>
+        <br>
+        Key Words:<%= publication.keywords %>
+        <br>
+      </tr>
+    <% end %>
+  </ul>
+</div>
