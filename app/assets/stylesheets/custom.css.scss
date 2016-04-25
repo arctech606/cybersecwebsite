@@ -96,3 +96,74 @@ table td{
 table th{
   padding:20px;
 }
+.Footer-Text
+{
+	color: #000000;
+	font-family: fira-sans, sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	line-height: 16px;
+	padding: 0px 0px 6px;
+}
+.Footer-Head
+{
+	color: #000000;
+	font-family: fira-sans, sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 16px;
+	padding: 0px 0px 12px;
+}
+.colelem /* a child element of a column */
+{
+	display: inline;
+	float: left;
+	clear: both;
+}
+
+.clearfix:after /* force a container to fit around floated items */
+{
+	content: "\0020";
+	visibility: hidden;
+	display: block;
+	height: 0px;
+	clear: both;
+}
+
+*:first-child+html .clearfix /* IE7 */
+{
+	zoom: 1;
+}
+.grpelem,.accordion_wrapper /* a child element of a group */
+{
+	display: inline;
+	float: left;
+}
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid #eaeaea;
+  color: #777;
+}
+
+footer a {
+  color: #555;
+}
+
+footer a:hover {
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 15px;
+}
