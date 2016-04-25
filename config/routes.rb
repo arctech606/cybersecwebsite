@@ -10,6 +10,8 @@ Rails.application.routes.draw do
   resources :events
   resources :publications
   resources :research_interests
+  resources :homepage
+  resources :events
 
   root 'homepage#index'
 
