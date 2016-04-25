@@ -7,6 +7,8 @@ class Student < ActiveRecord::Base
   has_secure_password
   validates :password, length: { minimum: 6 }
   attr_accessor :remember_token
+  extend FriendlyId
+  friendly_id :name
   def Student.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost
