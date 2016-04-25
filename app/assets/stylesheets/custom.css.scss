@@ -3,6 +3,8 @@
 
 body {
   padding-top: 200px;
+  font-family: fira-sans, sans-serif;
+	font-size: 18px;
 }
 
 section {
@@ -32,7 +34,7 @@ section {
 }
 
 .button{
-  font-size: small;
+  
   color: white;
 }
 
@@ -42,7 +44,7 @@ section {
 }
 
 .Directors_message_title{
-  font-size: smaller;
+  
 }
 
 #error_explanation {
@@ -142,6 +144,8 @@ footer ul li {
   margin-left: 15px;
 }
 .details_positions{
+  font-family: fira-sans, sans-serif;
+	font-size: 16px; 
   position:relative;
   left:5%;
   width:95%;
