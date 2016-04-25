@@ -25,7 +25,7 @@ Rails.application.routes.draw do
   get 'associate_student'=> 'faculties#associate_student'
   post 'student_login' => 'students_sessions#create'
   delete 'student_logout' => 'students_sessions#destroy'
-
+  get 'error_display' => 'faculties#error_display'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
