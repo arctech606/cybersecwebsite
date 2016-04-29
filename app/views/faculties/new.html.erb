@@ -1,7 +1,7 @@
 <div class= "row">
   <div class="col-md-6 col-md-offset-3">
     <h1>Faculty - Sign up</h1>
-    <%= form_for(@faculty) do |f| %>
+    <%= form_for(@faculty, html: { multipart: true }) do |f| %>
       <%= render 'form' %>
       <div class="field">
         <%= f.label :name %><br>
@@ -37,6 +37,12 @@
         <%= f.label :password_confirmation %> <br>
         <%= f.password_field :password_confirmation ,class: 'form-control'%>
       </div>
+      
+      <div class="picture">
+        <%= f.label :picture %> <br>
+        <%= f.file_field :picture,class: 'form-control' %>
+      </div>
+      
       <div class="actions">
         <%= f.submit 'Create Account' ,class: "btn btn-primary" %>
       </div>

@@ -1,5 +1,7 @@
 <p id="notice"><%= notice %></p>
 
+<%= image_tag @faculty.picture.url if @faculty.picture? %>
+
 <p>
   <strong>Name:</strong>
   <%= @faculty.name %>
@@ -29,6 +31,7 @@
   <strong>Email:</strong>
   <%= @faculty.email %>
 </p>
+
 
 <p><b>My Students </b></p>
 <% @faculty.students.each do |student| %>

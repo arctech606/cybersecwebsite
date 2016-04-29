@@ -8,9 +8,19 @@ class Faculty < ActiveRecord::Base
   has_secure_password
   validates :password, length: { minimum: 6 }
   attr_accessor :remember_token
-  
+  mount_uploader :picture, PictureUploader
   extend FriendlyId
   friendly_id :name
+  validate  :picture_size
+
+  
+    # Validates the size of an uploaded picture.
+    def picture_size
+      if picture.size > 5.megabytes
+        errors.add(:picture, "should be less than 5MB")
+      end
+    end
+  
   
   def Faculty.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :

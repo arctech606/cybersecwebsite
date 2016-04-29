@@ -4,6 +4,12 @@
     <h1>Edit your profile</h1>
     <%= form_for(@faculty) do |f| %>
       <%= render 'form' %>
+      
+      <div class="picture">
+        <%= f.label :picture %> <br>
+        <%= f.file_field :picture,class: 'form-control' %>
+      </div>
+      
       <div class="field">
         <%= f.label :name %><br>
         <%= f.text_field :name, class: 'form-control'%>

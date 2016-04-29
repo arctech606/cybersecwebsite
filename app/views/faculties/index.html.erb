@@ -6,11 +6,13 @@
 
     <% @faculties.each do |faculty| %>
         <div class="element_spacing">
+            <%= faculty.picture %>
             <b><%= link_to "#{faculty.name}", faculty %></b> |
             <b>Department:</b>
             <%= faculty.dept %> | 
             <b> Email</b>
             <%= faculty.email %>
+            
         </div>
     <% end %>
 
