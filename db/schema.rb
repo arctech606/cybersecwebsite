@@ -50,6 +50,11 @@ ActiveRecord::Schema.define(version: 20160419051044) do
     t.string   "remember_digest"
   end
 
+  create_table "faculties_publications", force: :cascade do |t|
+    t.integer "faculty_id"
+    t.integer "publication_id"
+  end
+
   create_table "faculties_students", id: false, force: :cascade do |t|
     t.integer "faculty_id"
     t.integer "student_id"
@@ -76,11 +81,6 @@ ActiveRecord::Schema.define(version: 20160419051044) do
     t.integer  "student_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "publications_faculties", force: :cascade do |t|
-    t.integer "faculty_id"
-    t.integer "publication_id"
   end
 
   create_table "publications_students", force: :cascade do |t|

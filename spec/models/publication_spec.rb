@@ -61,22 +61,28 @@ RSpec.describe PublicationsController, :type => :controller do
     end
   end
   
-  describe 'CREATE/DELETE' do
-    it 'DELETE' do
-        
-       e2=FactoryGirl.create(:publication,:name => "US23", :abstract => "CSCE", :keywords => "12345", :id =>'3' )
-      allow(Publication).to receive(:find).with('3').and_return(e2)
-      expect(e2).to receive(:destroy)
-  
-      delete :destroy, :id => e2.id
+  describe 'DELETE' do
+    before :each do
+      @f2 = FactoryGirl.create(:publication,:name => "US23", :abstract => "CSCE", :keywords => "12345", :id =>'3' )
     end
-    it 'CREATE' do
+  
+    it "deletes the contact" do
+      expect{
+        delete :destroy, id: @f2      
+      }.to change(Publication,:count).by(-1)
+    end
+    
+  end
+    
+  describe 'CREATE' do
+    it "creates a new faculty" do
       expect{
         post :create, publication: FactoryGirl.attributes_for(:publication)
       }.to change(Publication,:count).by(1)
     end
-    
-  end
+  end  
+
+  
 
 
   
