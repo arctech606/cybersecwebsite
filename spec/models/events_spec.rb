@@ -52,11 +52,16 @@ RSpec.describe EventsController, :type => :controller do
    
     it 'should call update_attributes and redirect' do
         
-      @e1 = double('Event', :name => "S", :desc => "help", :date => "122334" , :venue => "Bryan",:id =>'9')
-      allow(Event).to receive(:find).with('9').and_return(@e1)
+      #@e1 = double('Event', :name => "S", :desc => "help", :date => "122334" , :venue => "Bryan",:id =>'9')
+      #allow(Event).to receive(:find).with('9').and_return(@e1)
       #expect(@e1).to receive(:update_attributes!).and_return(true)
       #put :update, {:id => '1', :event => @e1}
       #expect(response).to redirect_to(event_path(@e1))
+      @e1 = FactoryGirl.create(:event)
+      put :update, id: @e1, 
+        event: FactoryGirl.attributes_for(:event, name: "Larry")
+      @e1.reload
+      @e1.name.should eq("Larry")
     end
   end
   
@@ -71,12 +76,13 @@ RSpec.describe EventsController, :type => :controller do
     before :each do
       @f1 = FactoryGirl.create(:event, :name => "S", :desc => "help", :date => "122334" , :venue => "Bryan",:id =>'9')
     end
+
   
     it "deletes the contact" do
       expect{
         delete :destroy, id: @f1        
       }.to change(Event,:count).by(-1)
-    end
+
     
   end
     

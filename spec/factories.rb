@@ -32,11 +32,28 @@ FactoryGirl.define do
 end
 
 FactoryGirl.define do
+    factory :project do
+        name "SSS"
+        sponsor "spsr"
+        desc "abcd"
+   end 
+end
+
+FactoryGirl.define do
     factory :event do
         name "SSS"
         date "1234"
         desc "sdsd"
         venue "asas"
+   end 
+end
+
+FactoryGirl.define do
+    factory :education do
+        courses_offered "SSS"
+        course_number "1234"
+        semester_offered "sdsd"
+        course_category "asas"
    end 
 end
 

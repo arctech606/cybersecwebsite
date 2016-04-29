@@ -219,6 +219,7 @@ e22 =Education.create(:courses_offered => "   Operating Systems and Applications
 e23 =Education.create(:courses_offered => "  Computer Architecture " ,:course_number=>"CSCE 614" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"D")
 
 
+<<<<<<< HEAD
 fac1=Faculty.create(:name=>"Dr Andrew L Ross",:dept=>"Dept  of International Affairs/National Security Affairs", :email=>"alross@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"Allen Rm 1045", :phone_no=>"(979) 458-8017") 
 fac2=Faculty.create(:name=>"Dr Jeryl Mumpower",:dept=>"Dept  of Public Service & Administration", :email=>"jmumpower@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"Allen Rm 1092", :phone_no=>"(979) 862-8821") 
 fac3=Faculty.create(:name=>"Dr Arnold Vedlitz", :dept=>"Executive Associate Dean", :email=>"avedlitz@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"Allen Rm 1113A", :phone_no=>"(979) 845-2929") 
@@ -285,7 +286,6 @@ fac63=Faculty.create(:name=>"Christina Papke",:dept=>"Research Development Offic
 fac64=Faculty.create(:name=>"Dr William R Stockton", :dept=>"Executive Associate Agency Director, Research Engineer", :email=>"stockton@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"abcdefg", :phone_no=>"1234567890")
 fac65=Faculty.create(:name=>"Srinivasa R Sunkari", :dept=>"P.E Research Engineer, Texas A&M Transportation Institute", :email=>"s-sunkari@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"abcdefg", :phone_no=>"1234567890")
 fac66=Faculty.create(:name=>"Majid Tabesh", :dept=>"Graduate Research Assistant TAMU SmartLab", :email=>"majid.tabesh@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"224B Wisenbacher Engineering Research Center", :phone_no=>"646-535-0098")
-
 
 
 
