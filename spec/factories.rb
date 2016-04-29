@@ -47,6 +47,15 @@ FactoryGirl.define do
    end 
 end
 
+FactoryGirl.define do
+    factory :education do
+        courses_offered "SSS"
+        course_number "1234"
+        semester_offered "sdsd"
+        course_category "asas"
+   end 
+end
+
 
 FactoryGirl.define do
     factory :research_interest do
