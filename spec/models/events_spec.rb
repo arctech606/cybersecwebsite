@@ -83,7 +83,7 @@ RSpec.describe EventsController, :type => :controller do
         delete :destroy, id: @f1        
       }.to change(Event,:count).by(-1)
 
-    
+    end
   end
     
   describe 'CREATE' do
