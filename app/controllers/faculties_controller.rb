@@ -4,7 +4,10 @@ class FacultiesController < ApplicationController
   # GET /faculties
   # GET /faculties.json
   def index
-    @faculties = Faculty.all
+    #@faculties = Faculty.all
+    @faculties = Faculty.order(params[:name])
+    @faculties = Faculty.search(params[:search])
+    
   end
 
   # GET /faculties/1

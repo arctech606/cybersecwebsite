@@ -219,7 +219,6 @@ e22 =Education.create(:courses_offered => "   Operating Systems and Applications
 e23 =Education.create(:courses_offered => "  Computer Architecture " ,:course_number=>"CSCE 614" ,:semester_offered=>"FALL15,SPRING16" ,:course_category=>"D")
 
 
-<<<<<<< HEAD
 fac1=Faculty.create(:name=>"Dr Andrew L Ross",:dept=>"Dept  of International Affairs/National Security Affairs", :email=>"alross@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"Allen Rm 1045", :phone_no=>"(979) 458-8017") 
 fac2=Faculty.create(:name=>"Dr Jeryl Mumpower",:dept=>"Dept  of Public Service & Administration", :email=>"jmumpower@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"Allen Rm 1092", :phone_no=>"(979) 862-8821") 
 fac3=Faculty.create(:name=>"Dr Arnold Vedlitz", :dept=>"Executive Associate Dean", :email=>"avedlitz@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"Allen Rm 1113A", :phone_no=>"(979) 845-2929") 

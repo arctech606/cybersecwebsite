@@ -9,7 +9,8 @@ class Publication < ActiveRecord::Base
   
   def self.search(search)
     if search
-      self.where("keywords like ?", "%#{search}%")
+     self. where(['name ILIKE ? OR keywords ILIKE ?', "%#{search}%", "%#{search}%"])
+      
     else
       self.all
     end
