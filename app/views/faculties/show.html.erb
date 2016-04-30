@@ -37,9 +37,8 @@ Name: <%= link_to "#{student.name}",student_path(student) %><br>
 <% if session.key?(:faculty_id)%>
 <%= link_to '<button type="button" class ="btn ">Add new Student</button>'.html_safe, uin_path %> <br>
 
-<%= form_tag upload_resume_path, :method => 'get' do %>
+<%= form_tag new_resume_path, :method => 'get' do %>
   <p>
-    <%= text_field_tag :cv_path, params[:cv_path] %>
     <%= submit_tag "Upload CV", :name => nil %></br>
   </p>
 <% end %>

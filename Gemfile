@@ -57,7 +57,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
-  gem 'factory_girl_rails'
+ 
 
   gem 'simplecov', :require => false
   gem 'codeclimate-test-reporter', require: nil
@@ -67,5 +67,6 @@ group :production do
   gem 'pg' # for Heroku deployment
   gem 'rails_12factor'
 end
-
-
+group :test do
+ gem 'factory_girl_rails'
+end

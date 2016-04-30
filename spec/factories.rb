@@ -1,4 +1,8 @@
 FactoryGirl.define do
+  factory :resume do
+    name "MyString"
+    attachment "MyString"
+  end
   factory :faculty do
     name "Sagar"
     dept "CSCE"
@@ -12,6 +16,10 @@ FactoryGirl.define do
 end
 
 FactoryGirl.define do
+  factory :resume do
+    name "MyString"
+    attachment "MyString"
+  end
   factory :student do
     name "Sagar"
     dept "CSCE"
@@ -24,6 +32,10 @@ FactoryGirl.define do
 end
 
 FactoryGirl.define do
+  factory :resume do
+    name "MyString"
+    attachment "MyString"
+  end
     factory :publication do
         name "SSS"
         abstract "key"
@@ -32,6 +44,10 @@ FactoryGirl.define do
 end
 
 FactoryGirl.define do
+  factory :resume do
+    name "MyString"
+    attachment "MyString"
+  end
     factory :project do
         name "SSS"
         sponsor "spsr"
@@ -40,6 +56,10 @@ FactoryGirl.define do
 end
 
 FactoryGirl.define do
+  factory :resume do
+    name "MyString"
+    attachment "MyString"
+  end
     factory :event do
         name "SSS"
         date "1234"
@@ -49,6 +69,10 @@ FactoryGirl.define do
 end
 
 FactoryGirl.define do
+  factory :resume do
+    name "MyString"
+    attachment "MyString"
+  end
     factory :education do
         courses_offered "SSS"
         course_number "1234"
@@ -59,6 +83,10 @@ end
 
 
 FactoryGirl.define do
+  factory :resume do
+    name "MyString"
+    attachment "MyString"
+  end
     factory :research_interest do
         name "SSS"
         

@@ -66,7 +66,7 @@ RSpec.describe PublicationsController, :type => :controller do
       @f2 = FactoryGirl.create(:publication,:name => "US23", :abstract => "CSCE", :keywords => "12345", :id =>'3' )
     end
   
-    it "deletes the contact" do
+    it "deletes the publication" do
       expect{
         delete :destroy, id: @f2      
       }.to change(Publication,:count).by(-1)
@@ -75,7 +75,7 @@ RSpec.describe PublicationsController, :type => :controller do
   end
     
   describe 'CREATE' do
-    it "creates a new faculty" do
+    it "creates a new publication" do
       expect{
         post :create, publication: FactoryGirl.attributes_for(:publication)
       }.to change(Publication,:count).by(1)

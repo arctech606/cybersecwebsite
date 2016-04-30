@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  
+  resources :resumes
+
+  get 'resumes/index'
+
+  get 'resumes/new'
+
+  get 'resumes/create'
+
+  get 'resumes/destroy'
 
   get 'students_sessions/new'
 
