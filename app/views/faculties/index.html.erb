@@ -1,7 +1,10 @@
 
 <div class="details_positions">
     <p id="notice"><%= notice %></p>
-
+    <% if logged_in? %>
+    <li><%= link_to "Student Login", student_login_path, method: 'delete' %></li>
+    <% end %>
+                
 <h1>Faculty Experts</h1>
 
     <% @faculties.each do |faculty| %>
