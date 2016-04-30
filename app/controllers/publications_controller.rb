@@ -13,7 +13,7 @@ class PublicationsController < ApplicationController
         @publications=Publication.joins(:focusareas).where(focusareas:{name:params[:params][:focus_area]})
       end
       if params[:params][:cd_topic] != 'None'
-        @publications=Publication.joins(:cdtopics).where(cdtopics:{name:params[:params][:cdtopics]})
+        @publications=Publication.joins(:cdtopics).where(cdtopics:{name:params[:params][:cd_topic]})
       end
       if params[:params][:publication_type] != 'None'
         @publications = Publication.where(:publication_type => params[:params][:publication_type])
