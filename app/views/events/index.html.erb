@@ -1,7 +1,15 @@
 <div class="details_positions">
   <p id="notice"><%= notice %></p>
   <h1>Listing Events</h1>
-  
+  <%= form_tag events_path, :method => 'get' do %>
+    <p>
+      <center><%= text_field_tag :search, params[:search], size: 150 %></center>
+      <br>
+      <div class=searchBarProperty>
+        <%= submit_tag "Search for Events", class: "btn btn-primary" %>
+      </div>
+    </p>
+  <% end %>
   <table>
     <thead>
       <tr>
