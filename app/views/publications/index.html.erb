@@ -9,12 +9,12 @@
       <br>
       <center>Search by:</center>
       <br>
-      <center>Publication type <%= select(:params,:publication_type,["Book Chapter","Papers"])%>
-      Focus Area <%= select(:params,:focus_area,["Critical Infrastructure Protection","Cryptography / Cryptanalysis",
+      <center>Publication type <%= select(:params,:publication_type,["None","Books and Chapters","Conference Proceedings and Papers","Journal Articles"])%>
+      Focus Area <%= select(:params,:focus_area,["None","Critical Infrastructure Protection","Cryptography / Cryptanalysis",
       "Cyber Defense Social and Behavioral Analysis","Cyber Physical System Security","Information Theoretic Secure Communication",
       "Intrusion and Anomaly Detection","Malicious Social Media and Spam","Malware and Botnet Detection and Analysis","Mobile Device and Mobile Communication Security",
       "Network Security (including SDN and Non IP Networks)","Novel and Non Traditional Attacks Method Analysis","Privacy and Anonymity Preservation","Smart Grid, Power Distribution, and Electrical Market Security"])%>
-      Cyber defense Topic <%= select(:params,:cd_topic,["Security Mechanisms/Functionality","Architectures","Assurance","Operations","Analysis","NonTechnical CD Issues",])%>
+      Cyber defense Topic <%= select(:params,:cd_topic,["None","Security Mechanisms/Functionality","Architectures","Assurance","Operations","Analysis","NonTechnical CD Issues",])%>
       </center>
       <div class=searchBarProperty>
         <%= submit_tag "Search", class: "btn btn-primary" %>

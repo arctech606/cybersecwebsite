@@ -7,7 +7,19 @@ class PublicationsController < ApplicationController
     
     
     @publications = Publication.order(params[:name])
-    @publications = Publication.search(params[:search])
+    # if params[:search]
+    #   @publications = Publication.search(params[:search])
+    # end
+    # if params[:publication_type] !='None'
+    #   @publications = Publication.where(:publication_type => params[:publication_type])
+    # end
+    if params[:focus_area] != 'None'
+      @publications=Publication.joins(:focusareas).where(focusareas:{name:params[:focus_area]})
+    end
+    debugger
+    # if params[:cd_topic] != 'None'
+    #   @publications=Publication.joins(:cdtopics).where(cdtopics:{name:params[:cdtopics]})
+    # end
     #respond_to do |format|
      # format.html # index.html.erb
     #  format.json { render json: @publications }

@@ -1,4 +1,10 @@
 FactoryGirl.define do
+  factory :cdtopic do
+    name "MyString"
+  end
+  factory :focusarea do
+    name "MyString"
+  end
   factory :faculty do
     name "Sagar"
     dept "CSCE"
@@ -9,9 +15,9 @@ FactoryGirl.define do
     password "new12345"
     password_confirmation "new12345"
   end 
-end
-
-FactoryGirl.define do
+  factory :research_interest do
+        name "SSS"
+  end 
   factory :student do
     name "Sagar"
     dept "CSCE"
@@ -21,29 +27,15 @@ FactoryGirl.define do
     password "new12345"
     password_confirmation "new12345"
   end 
-end
-
-FactoryGirl.define do
-    factory :publication do
+  factory :publication do
         name "SSS"
         abstract "key"
         keywords "key"
-   end 
-end
-
-FactoryGirl.define do
-    factory :event do
+  end 
+  factory :event do
         name "SSS"
         date "1234"
         desc "sdsd"
         venue "asas"
-   end 
-end
-
-
-FactoryGirl.define do
-    factory :research_interest do
-        name "SSS"
-        
-   end 
+  end 
 end
