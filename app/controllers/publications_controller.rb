@@ -8,14 +8,16 @@ class PublicationsController < ApplicationController
     if params[:search]
       @publications = Publication.search(params[:search])
     end
-    if params[:params][:focus_area] != 'None'
-      @publications=Publication.joins(:focusareas).where(focusareas:{name:params[:params][:focus_area]})
-    end
-    if params[:params][:cd_topic] != 'None'
-      @publications=Publication.joins(:cdtopics).where(cdtopics:{name:params[:params][:cdtopics]})
-    end
-    if params[:params][:publication_type] != 'None'
-      @publications = Publication.where(:publication_type => params[:params][:publication_type])
+    if params[:params]
+      if params[:params][:focus_area] != 'None'
+        @publications=Publication.joins(:focusareas).where(focusareas:{name:params[:params][:focus_area]})
+      end
+      if params[:params][:cd_topic] != 'None'
+        @publications=Publication.joins(:cdtopics).where(cdtopics:{name:params[:params][:cdtopics]})
+      end
+      if params[:params][:publication_type] != 'None'
+        @publications = Publication.where(:publication_type => params[:params][:publication_type])
+      end
     end
   end
    
