@@ -57,4 +57,20 @@ end
 Then(/^I must see the main homepage as a student$/) do
  '/'  
 end
+When(/^I fill student "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
+ if $1=='search'
+    fill_in('search', :with => arg2)
+  end
+end
 
+When(/^I search for student "([^"]*)" I should not see "([^"]*)"$/) do |query, bug|
+  steps %{
+    And I fill in "search" with "#{query}"
+    And I press "Search for Students"
+    Then I should not see "#{bug}"
+  }
+end
+
+When(/^I am viewing the "([^"]*)"$/) do |arg1|
+  visit students_path
+end
