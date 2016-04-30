@@ -13,9 +13,14 @@
 <div class = "well">
    <%= form_for @resume, html: { multipart: true } do |f| %>
       <%= f.label :name %>
-      <%= f.text_field :name %>
+      <%= f.text_field :name %><br>
+      <%= f.label :uin %>
+      <%= f.text_field :uin %><br>
       <%= f.label :attachment %>
       <%= f.file_field :attachment %>
+      
       <%= f.submit "Save", class: "btn btn-primary" %>
    <% end %>
 </div>
+
+

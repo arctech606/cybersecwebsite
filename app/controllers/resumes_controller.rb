@@ -1,6 +1,10 @@
 class ResumesController < ApplicationController
    def index
-      @resumes = Resume.all
+      
+       @faculty = Faculty.find(session[:faculty_id])
+       @uin = @faculty.uin
+       @resume = Resume.where(:uin => @uin)
+       
    end
    
    def new
@@ -26,7 +30,7 @@ class ResumesController < ApplicationController
    
    private
       def resume_params
-      params.require(:resume).permit(:name, :attachment)
+      params.require(:resume).permit(:name, :attachment, :uin)
    end
    
 end
