@@ -1,3 +1,4 @@
+
 class PublicationsStudents < ActiveRecord::Migration
   def change
   create_table :publications_students do |t|

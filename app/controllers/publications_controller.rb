@@ -4,16 +4,38 @@ class PublicationsController < ApplicationController
   # GET /publications
   # GET /publications.json
   def index
-    
-    
     @publications = Publication.order(params[:name])
-    @publications = Publication.search(params[:search])
+    if params[:search]
+      @publications = Publication.search(params[:search])
+    end
+    if params[:params]
+      if params[:params][:focus_area] != 'None'
+        @publications=Publication.joins(:focusareas).where(focusareas:{name:params[:params][:focus_area]})
+      end
+      if params[:params][:cd_topic] != 'None'
+        @publications=Publication.joins(:cdtopics).where(cdtopics:{name:params[:params][:cd_topic]})
+        if params[:search]
+          @publications1=Publication.search(params[:search])
+          @publications =@publications & @publications1
+        end
+      end
+      if params[:params][:publication_type] != 'None'
+        @publications = Publication.where(:publication_type => params[:params][:publication_type])
+      end
+    end
+  end
+   
+    # if params[:publication_type] !='None'
+    #   @publications = Publication.where(:publication_type => params[:publication_type])
+    # end
+    # if params[:cd_topic] != 'None'
+    #   @publications=Publication.joins(:cdtopics).where(cdtopics:{name:params[:cdtopics]})
+    # end
     #respond_to do |format|
      # format.html # index.html.erb
     #  format.json { render json: @publications }
     #end
     #redirect_to publications_path
-  end
   
   def sort_by_name
    
@@ -83,3 +105,4 @@ class PublicationsController < ApplicationController
       params.require(:publication).permit(:name, :abstract, :keywords)
     end
 end
+

@@ -11,10 +11,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160419051044) do
+ActiveRecord::Schema.define(version: 20160430045651) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "cdtopics", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "cdtopics_publications", id: false, force: :cascade do |t|
+    t.integer "publication_id"
+    t.integer "cdtopic_id"
+  end
+
+  add_index "cdtopics_publications", ["cdtopic_id"], name: "index_cdtopics_publications_on_cdtopic_id", using: :btree
+  add_index "cdtopics_publications", ["publication_id"], name: "index_cdtopics_publications_on_publication_id", using: :btree
 
   create_table "educations", force: :cascade do |t|
     t.string   "courses_offered"
@@ -58,6 +72,20 @@ ActiveRecord::Schema.define(version: 20160419051044) do
   add_index "faculties_students", ["faculty_id"], name: "index_faculties_students_on_faculty_id", using: :btree
   add_index "faculties_students", ["student_id"], name: "index_faculties_students_on_student_id", using: :btree
 
+  create_table "focusareas", force: :cascade do |t|
+    t.string   "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "focusareas_publications", id: false, force: :cascade do |t|
+    t.integer "publication_id"
+    t.integer "focusarea_id"
+  end
+
+  add_index "focusareas_publications", ["focusarea_id"], name: "index_focusareas_publications_on_focusarea_id", using: :btree
+  add_index "focusareas_publications", ["publication_id"], name: "index_focusareas_publications_on_publication_id", using: :btree
+
   create_table "projects", force: :cascade do |t|
     t.string   "name"
     t.string   "sponsor"
@@ -74,8 +102,9 @@ ActiveRecord::Schema.define(version: 20160419051044) do
     t.string   "keywords"
     t.integer  "faculty_id"
     t.integer  "student_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.datetime "created_at",       null: false
+    t.datetime "updated_at",       null: false
+    t.string   "publication_type"
   end
 
   create_table "publications_faculties", force: :cascade do |t|

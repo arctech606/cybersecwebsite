@@ -9,9 +9,9 @@ FactoryGirl.define do
     password "new12345"
     password_confirmation "new12345"
   end 
-end
-
-FactoryGirl.define do
+  factory :research_interest do
+        name "SSS"
+  end 
   factory :student do
     name "Sagar"
     dept "CSCE"
@@ -21,29 +21,26 @@ FactoryGirl.define do
     password "new12345"
     password_confirmation "new12345"
   end 
-end
-
-FactoryGirl.define do
-    factory :publication do
+  factory :publication do
         name "SSS"
         abstract "key"
         keywords "key"
-   end 
-end
-
-FactoryGirl.define do
-    factory :event do
+        publication_type "Books and Chapters"
+        cdtopics {[]}
+        focusareas {[]}
+  end 
+  factory :cdtopic do
+    name "Security Mechanisms/Functionality"
+    publications {[]}
+  end
+  factory :focusarea do
+    name "Critical Infrastructure Protection"
+    publications {[]}
+  end
+  factory :event do
         name "SSS"
         date "1234"
         desc "sdsd"
         venue "asas"
-   end 
-end
-
-
-FactoryGirl.define do
-    factory :research_interest do
-        name "SSS"
-        
-   end 
+  end 
 end
