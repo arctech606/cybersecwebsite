@@ -1,10 +1,4 @@
 FactoryGirl.define do
-  factory :cdtopic do
-    name "MyString"
-  end
-  factory :focusarea do
-    name "MyString"
-  end
   factory :faculty do
     name "Sagar"
     dept "CSCE"
@@ -31,7 +25,18 @@ FactoryGirl.define do
         name "SSS"
         abstract "key"
         keywords "key"
+        publication_type "Books and Chapters"
+        cdtopics {[]}
+        focusareas {[]}
   end 
+  factory :cdtopic do
+    name "Security Mechanisms/Functionality"
+    publications {[]}
+  end
+  factory :focusarea do
+    name "Critical Infrastructure Protection"
+    publications {[]}
+  end
   factory :event do
         name "SSS"
         date "1234"
