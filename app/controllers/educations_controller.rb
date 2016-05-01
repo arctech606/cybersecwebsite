@@ -1,28 +1,19 @@
 class EducationsController < ApplicationController
   before_action :set_education, only: [:show, :edit, :update, :destroy]
 
-  # GET /educations
-  # GET /educations.json
   def index
     @educations = Education.all
   end
 
-  # GET /educations/1
-  # GET /educations/1.json
   def show
   end
 
-  # GET /educations/new
   def new
     @education = Education.new
   end
 
-  # GET /educations/1/edit
   def edit
   end
-
-  # POST /educations
-  # POST /educations.json
   def create
     @education = Education.new(education_params)
 
@@ -36,9 +27,6 @@ class EducationsController < ApplicationController
       end
     end
   end
-
-  # PATCH/PUT /educations/1
-  # PATCH/PUT /educations/1.json
   def update
     respond_to do |format|
       if @education.update(education_params)
@@ -50,9 +38,6 @@ class EducationsController < ApplicationController
       end
     end
   end
-
-  # DELETE /educations/1
-  # DELETE /educations/1.json
   def destroy
     @education.destroy
     respond_to do |format|
@@ -62,12 +47,11 @@ class EducationsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
+    
     def set_education
       @education = Education.friendly.find(params[:id])
     end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
     def education_params
       params.require(:education).permit(:courses_offered, :course_number, :semester_offered, :course_category)
     end
