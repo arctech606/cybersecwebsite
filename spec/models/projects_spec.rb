@@ -8,7 +8,7 @@ describe Project do
         @e1.save
         @e2 = FactoryGirl.create(:project, name: "W", sponsor: "lol1", desc: "uu")
         @e3 = FactoryGirl.create(:project, name:  "R",sponsor: "lol2", desc: "dd")
-       # @e4 = FactoryGirl.create(:event, name:  "R", desc: nil, date: "12-23-43", venue: "Bryan")
+      # @e4 = FactoryGirl.create(:event, name:  "R", desc: nil, date: "12-23-43", venue: "Bryan")
       end
 
       it 'with abstract field non-empty' do 
@@ -27,7 +27,7 @@ describe Project do
      
     
       it 'should not consider incomplete entry' do
-         #expect(@e4.desc).to be_nil
+        #expect(@e4.desc).to be_nil
       end
       
       

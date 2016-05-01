@@ -8,7 +8,7 @@ describe ResearchInterest do
         @e1.save
         @e2 = FactoryGirl.create(:research_interest, name: "W")
         @e3 = FactoryGirl.create(:research_interest, name:  "R")
-       # @e4 = FactoryGirl.create(:research, name:  "R", desc: nil, date: "12-23-43", venue: "Bryan")
+      # @e4 = FactoryGirl.create(:research, name:  "R", desc: nil, date: "12-23-43", venue: "Bryan")
       end
 
      
@@ -21,7 +21,7 @@ describe ResearchInterest do
      
     
       it 'should not consider incomplete entry' do
-         #expect(@e4.desc).to be_nil
+        #expect(@e4.desc).to be_nil
       end
       
       
