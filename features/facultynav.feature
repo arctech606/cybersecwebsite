@@ -17,6 +17,6 @@ Scenario: view the list of faculties
   And I should see "Sagar","Sujoy","Shweta","Pravir"
 @scenario2
 Scenario: view the information correpsonding to a faculty
-  Given I am on the "Faculty" page
+  Given I am on the "Faculties" page
   When I click on "Show" Link for "Sujoy"
   Then I must be directed to the "details" page for "Sujoy"

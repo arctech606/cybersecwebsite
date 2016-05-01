@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
 ruby '2.2.2'
-
+gem 'carrierwave',             '0.10.0'
+gem 'mini_magick',             '3.8.0'
+gem 'fog',                     '1.36.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
 gem 'bootstrap-sass', '3.2.0.0'
@@ -55,7 +57,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'capybara'
   gem 'launchy'
-  gem 'factory_girl_rails'
+ 
 
   gem 'simplecov', :require => false
   gem 'codeclimate-test-reporter', require: nil
@@ -65,5 +67,6 @@ group :production do
   gem 'pg' # for Heroku deployment
   gem 'rails_12factor'
 end
-
-
+group :test do
+ gem 'factory_girl_rails'
+end

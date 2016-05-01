@@ -47,7 +47,7 @@ RSpec.describe FacultiesController, :type => :controller do
    
     it 'should call update_attributes and redirect' do
         
-      @faculty = FactoryGirl.create(:faculty)
+      @faculty = FactoryGirl.create(:faculty, name: "Larry", dept: "CSCE", desc: "CSCE", phone_no: "12345", office: "abcd",:password =>'RGVKIAAG',:password_confirmation => 'RGVKIAAG')
       put :update, id: @faculty, 
         faculty: FactoryGirl.attributes_for(:faculty, name: "Larry")
       @faculty.reload
@@ -62,22 +62,31 @@ RSpec.describe FacultiesController, :type => :controller do
     end
   end
   
-  describe 'CREATE/DELETE' do
-    it 'DELETE' do
-        
-       e2=FactoryGirl.create(:faculty,:name => "US23", :dept => "CSCE", :desc => "CSCE", :phone_no => "12345", :office => "abcd",:id =>'3' ,:password => 'RGVKIAAG',:password_confirmation => 'RGVKIAAG')
-      allow(Faculty).to receive(:find).with('3').and_return(e2)
-      expect(e2).to receive(:destroy)
-  
-      delete :destroy, :id => e2.id
+  describe 'DELETE' do
+    before :each do
+      @f1 = FactoryGirl.create(:faculty, name: "Larry", dept: "CSCE", desc: "CSCE", phone_no: "12345", office: "abcd",:password =>'RGVKIAAG',:password_confirmation => 'RGVKIAAG')
     end
-    it 'CREATE' do
+  
+    it "deletes the contact" do
+      expect{
+        delete :destroy, id: @f1        
+      }.to change(Faculty,:count).by(-1)
+    end
+    
+  end
+    
+  describe 'CREATE' do
+    it "creates a new faculty" do
       expect{
         post :create, faculty: FactoryGirl.attributes_for(:faculty)
       }.to change(Faculty,:count).by(1)
     end
     
+  
   end
+    
+    
+  
 
 
 end

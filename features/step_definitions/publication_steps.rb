@@ -8,6 +8,9 @@ When(/^I fill "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
   if $1=='search'
     fill_in('search', :with => arg2)
   end
+  if $1=='search by faculty experts'
+    fill_in('search by faculty experts', :with => arg2)
+  end
 end
 
 When(/^I click "([^"]*)"$/) do |arg1|

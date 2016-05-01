@@ -35,6 +35,24 @@ Then(/^I should see "([^"]*)","([^"]*)","([^"]*)","([^"]*)"$/) do |arg1, arg2, a
   page.should have_content(arg4)
 end
 
+When(/^I search for faculty "([^"]*)" I should not see "([^"]*)"$/) do |query, bug|
+  steps %{
+    And I fill in "search" with "#{query}"
+    And I press "Search for Faculty Experts"
+    Then I should not see "#{bug}"
+  }
+end
+
+When(/^I fill faculty "([^"]*)" with "([^"]*)"$/) do |arg1, arg2|
+  if $1=='search'
+    fill_in('search', :with => arg2)
+  end
+  if $1=='search by faculty experts'
+    fill_in('search by faculty experts', :with => arg2)
+  end
+end
+
+
 When(/^I click on "([^"]*)" Link for "([^"]*)"$/) do |arg1, arg2|
   if $1=='Show'
     click_link('Show')
@@ -49,4 +67,5 @@ Then(/^I must be directed to the "([^"]*)" page for "([^"]*)"$/) do |arg1, arg2|
     visit(uin_path)
   end
 end
+
 
