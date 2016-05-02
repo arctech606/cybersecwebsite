@@ -24,6 +24,13 @@
       <%= f.label :keywords %><br>
       <%= f.text_field :keywords %>
     </div>
+    Publication type <%= f.select(:publication_type,["None","Books and Chapters","Conference Proceedings and Papers","Journal Articles"])%>
+    </br>Focus Area <%= select(:params,:focus_area,["None","Critical Infrastructure Protection","Cryptography / Cryptanalysis",
+      "Cyber Defense Social and Behavioral Analysis","Cyber Physical System Security","Information Theoretic Secure Communication",
+      "Intrusion and Anomaly Detection","Malicious Social Media and Spam","Malware and Botnet Detection and Analysis","Mobile Device and Mobile Communication Security",
+      "Network Security (including SDN and Non IP Networks)","Novel and Non Traditional Attacks Method Analysis","Privacy and Anonymity Preservation","Smart Grid, Power Distribution, and Electrical Market Security"])%>
+    </br>Cyber defense Topic <%= select(:params,:cd_topic,["None","Security Mechanisms/Functionality","Architecture","Assurance","Operations","Analysis","Non Technical CD Issues"])%>
+    
     <div class="actions">
       <%= f.submit %>
     </div>

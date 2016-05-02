@@ -58,7 +58,19 @@ class PublicationsController < ApplicationController
   # POST /publications.json
   def create
     @publication = Publication.new(publication_params)
-
+    @fac=Faculty.find(session[:faculty_id])
+    @fac.publications << @publication
+    @publication.faculties<< @fac
+    if (params[:params][:cd_topic])
+      if (params[:params][:cd_topic])!='None'
+        Cdtopic.find_by_name(params[:params][:cd_topic]).publications << @publication
+      end
+    end
+    if (params[:params][:focus_area])
+      if (params[:params][:focus_area])!='None'
+        Focusarea.find_by_name(params[:params][:focus_area]).publications << @publication
+      end
+    end
     respond_to do |format|
       if @publication.save
         format.html { redirect_to @publication, notice: 'Publication was successfully created.' }
@@ -102,7 +114,7 @@ class PublicationsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def publication_params
-      params.require(:publication).permit(:name, :abstract, :keywords)
+      params.require(:publication).permit(:name, :abstract, :keywords,:publication_type)
     end
 end
 

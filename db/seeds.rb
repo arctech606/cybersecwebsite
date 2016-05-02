@@ -297,4 +297,11 @@ Publication.all.each do |pub|
 	end
 end
 
+u=["Critical Infrastructure Protection","Cryptography / Cryptanalysis",
+      "Cyber Defense Social and Behavioral Analysis","Cyber Physical System Security","Information Theoretic Secure Communication",
+      "Intrusion and Anomaly Detection","Malicious Social Media and Spam","Malware and Botnet Detection and Analysis","Mobile Device and Mobile Communication Security",
+      "Network Security (including SDN and Non IP Networks)","Novel and Non Traditional Attacks Method Analysis","Privacy and Anonymity Preservation","Smart Grid, Power Distribution, and Electrical Market Security"]
+u.each do |rt|
+	Focusarea.create(:name=>rt)
+end
 
