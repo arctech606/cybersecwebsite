@@ -286,8 +286,8 @@ fac64=Faculty.create(:name=>"Dr William R Stockton", :dept=>"Executive Associate
 fac65=Faculty.create(:name=>"Srinivasa R Sunkari", :dept=>"P.E Research Engineer, Texas A&M Transportation Institute", :email=>"s-sunkari@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"abcdefg", :phone_no=>"1234567890")
 fac66=Faculty.create(:name=>"Majid Tabesh", :dept=>"Graduate Research Assistant TAMU SmartLab", :email=>"majid.tabesh@TAMU.EDU", :desc=>"abc", :password=>" helloworld", :password_confirmation=>" helloworld", :office=>"224B Wisenbacher Engineering Research Center", :phone_no=>"646-535-0098")
 j=["Security Mechanisms/Functionality","Architecture","Assurance","Operations","Analysis","Non Technical CD Issues"]
-j.each do |chutyapa|
-	Cdtopic.create(:name=>chutyapa)
+j.each do |i|
+	Cdtopic.create(:name=>i)
 end
 Publication.all.each do |pub|
 	Cdtopic.all.each do |tp|
@@ -304,4 +304,10 @@ u=["Critical Infrastructure Protection","Cryptography / Cryptanalysis",
 u.each do |rt|
 	Focusarea.create(:name=>rt)
 end
+Publication.create(:name=> "A randomized response model for privacy preserving smart metering", :abstract=>"xyz",:keywords=>"Non Technical CD Issues",:publication_type =>"Books and Chapters").focusareas 
+Publication.create(:name=> "SAPPHIRE: Anonymity for enhanced control and private collaboration in healthcare clouds", :abstract=>"xyz",:keywords=>"Non Technical CD Issues",:publication_type => "Books and Chapters")
+Publication.create(:name=> "Sensitivity Analysis of Real Time Locational Marginal Price to SCADA Sensor Data Corruption", :abstract=>"xyz",:keywords=>"Non Technical CD Issues",:publication_type => "Conference Proceedings and Papers")
+Publication.create(:name=> "Seven Months with the Devils: A Long Term Study of Content Polluters on Twitter", :abstract=>"xyz",:keywords=>"Non Technical CD Issues",:publication_type => "Conference Proceedings and Papers")
+Publication.create(:name=> "Uipicker: User input privacy identification in mobile applications", :abstract=>"xyz",:keywords=>"Non Technical CD Issues",:publication_type => 'Journal Articles')
+Publication.create(:name=> "Uncovering Crowdsourced Manipulation of Online Reviews", :abstract=>"xyz",:keywords=>"Non Technical CD Issues",:publication_type => 'Journal Articles')
 
