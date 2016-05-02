@@ -4,19 +4,15 @@ class EducationsController < ApplicationController
   def index
     @educations = Education.all
   end
-
   def show
   end
-
   def new
     @education = Education.new
   end
-
   def edit
   end
   def create
     @education = Education.new(education_params)
-
     respond_to do |format|
       if @education.save
         format.html { redirect_to @education, notice: 'Education was successfully created.' }
@@ -45,13 +41,10 @@ class EducationsController < ApplicationController
       format.json { head :no_content }
     end
   end
-
   private
-    
     def set_education
       @education = Education.friendly.find(params[:id])
     end
-
     def education_params
       params.require(:education).permit(:courses_offered, :course_number, :semester_offered, :course_category)
     end
