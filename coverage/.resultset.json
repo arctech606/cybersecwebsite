@@ -878,7 +878,7 @@
         0
       ]
     },
-    "timestamp": 1462149930
+    "timestamp": 1462164587
   },
   "RSpec": {
     "coverage": {
@@ -1003,6 +1003,57 @@
         null,
         null
       ],
+      "/home/ubuntu/workspace/app/controllers/resumes_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        1,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        null
+      ],
+      "/home/ubuntu/workspace/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null
+      ],
       "/home/ubuntu/workspace/app/controllers/students_sessions_controller.rb": [
         1,
         1,
@@ -1022,19 +1073,6 @@
         1,
         0,
         0,
-        null,
-        null
-      ],
-      "/home/ubuntu/workspace/app/controllers/application_controller.rb": [
-        1,
-        null,
-        null,
-        1,
-        1,
-        1,
-        null,
-        1,
-        null,
         null,
         null
       ],
@@ -1674,65 +1712,27 @@
         1,
         null
       ],
-      "/home/ubuntu/workspace/app/uploaders/attachment_uploader.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
       "/home/ubuntu/workspace/app/models/resume.rb": [
+        1,
+        1,
+        1,
+        null
+      ],
+      "/home/ubuntu/workspace/app/uploaders/attachment_uploader.rb": [
+        null,
+        null,
+        1,
+        1,
+        1,
         0,
+        null,
+        1,
         0,
-        0,
-        0
+        null,
+        null,
+        null
       ],
       "/home/ubuntu/workspace/app/controllers/sessions_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      "/home/ubuntu/workspace/app/controllers/resumes_controller.rb": [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
-        0,
         0,
         0,
         0,
@@ -1759,6 +1759,6 @@
         0
       ]
     },
-    "timestamp": 1462149865
+    "timestamp": 1462164725
   }
 }

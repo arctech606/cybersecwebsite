@@ -8,10 +8,12 @@ FactoryGirl.define do
     email "ss@ss.com"
     password "new12345"
     password_confirmation "new12345"
+    uin "1234".to_i
   end 
   factory :resume do
     name "MyString"
     attachment "MyString"
+     uin "1234".to_i
   end
   factory :student do
     name "Sagar"
