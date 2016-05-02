@@ -4,15 +4,15 @@ Feature: Adding students to my team
 Background: Students in database
   Given the following students exist in database
   | name         | dept   | desc         | email        | password | uin     |
-  | Sagar        | CSCE   | George Lucas |   s@tamu.edu | 1234567  |724004161|
-   Given the following faculties exist in database
+  | Sagar        | CSCE   | George Lucas |   bc@tamu.edu | 1234567  |724004161|
+  And the following faculties exist in database
   | name         | dept   | desc         | email        | office   | phone_no | password |
   | Sagar        | CSCE   | George Lucas |   s@tamu.edu | 401      |979985738 |1234567   |
   | Sujoy        | EE     | Ridley Scott |   b@tamu.edu | 302      |7818      |1234567   |
 @scenario1
 Scenario: I want to add a student step a
-  Given I am on the faculty profile page
-  And I click on "Add new Student" button
+  Given I logged in as a faculty  
+  And I click on "Add a new Student" button
   Then I must be directed to the enter_uin page for faculty
   
 @scenario2
