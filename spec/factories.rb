@@ -8,6 +8,7 @@ FactoryGirl.define do
     email "ss@ss.com"
     password "new12345"
     password_confirmation "new12345"
+    publications {[]}
   end 
   factory :resume do
     name "MyString"
@@ -29,6 +30,7 @@ FactoryGirl.define do
         publication_type "Books and Chapters"
         cdtopics {[]}
         focusareas {[]}
+        faculties {[]}
   end 
   factory :cdtopic do
     name "Security Mechanisms/Functionality"
