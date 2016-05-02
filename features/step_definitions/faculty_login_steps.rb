@@ -37,6 +37,14 @@ Then(/^I must be on my homepage$/) do
   faculty_path(Faculty.find_by(:name => 'Sagar'))
 end
 
+Given(/^I logged in as a faculty$/) do
+  visit login_path
+  fill_in('session_email', :with => 's@tamu.edu')
+  fill_in('session_password', :with => '1234567')
+  click_button('Log in')
+  current_path.should match (/faculties/)
+end
+
 Then(/^I should not see the "([^"]*)" and "([^"]*)" options on the navbar$/) do |arg1, arg2|
    page.should have_no_content(arg1)
    page.should have_no_content(arg2)
