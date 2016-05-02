@@ -13,6 +13,7 @@ class FacultiesController < ApplicationController
   # GET /faculties/1
   # GET /faculties/1.json
   def show
+    
   end
   
   def associate_student
@@ -43,6 +44,9 @@ class FacultiesController < ApplicationController
   # GET /faculties/1/edit
   def edit
     if  !session.key?(:faculty_id)
+      redirect_to error_display_path
+    end
+    if session[:faculty_id] and session[:faculty_id]!=params[:id]
       redirect_to error_display_path
     end
   end

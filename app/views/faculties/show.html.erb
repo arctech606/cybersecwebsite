@@ -37,7 +37,7 @@
 <% @faculty.students.each do |student| %>
 Name: <%= link_to "#{student.name}",student_path(student) %><br>
 <%end%>
-<% if session.key?(:faculty_id)%>
+<% if session.key?(:faculty_id) and (session[:faculty_id] and session[:faculty_id] == params[:id])%>
 <%= link_to '<button type="button" class ="btn " id ="Add a new Student">Add new Student</button>'.html_safe, uin_path %> <br>
 
 <%= form_tag new_resume_path, :method => 'get' do %>
