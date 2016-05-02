@@ -185,6 +185,12 @@ RSpec.describe PublicationsController, :type => :controller do
   end
     
   describe 'CREATE' do
+    before :each do
+      @rs1 = FactoryGirl.create(:faculty, :id =>'9', :uin => "1234".to_i, :name => "Sagar" ,:dept => "CSCE", :desc => "help", :office => "CSCE", :phone_no => "1234", :email => "ss@ss.com", :password => "new12345", :password_confirmation => "new12345")
+      #@rs = FactoryGirl.create(:resume,:name => "US23", :attachment => "CSCE",:uin=>"1234".to_i, :id =>'9')
+      session[:faculty_id] = @rs1.id
+      params[:params] = {:cd_topic => 'update'}
+    end
     it "creates a new publication" do
       expect{
         post :create, publication: FactoryGirl.attributes_for(:publication)
