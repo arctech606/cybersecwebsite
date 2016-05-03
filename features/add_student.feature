@@ -11,15 +11,15 @@ Background: Students in database
   | Sujoy        | EE     | Ridley Scott |   b@tamu.edu | 302      |7818      |1234567   |
 @scenario1
 Scenario: I want to add a student step a
-  Given I logged in as a faculty  
-  And I click on "Add a new Student" button
+  Given I am logged in as "Sagar"
+  And I click on the "Add new Student" button
   Then I must be directed to the enter_uin page for faculty
   
 @scenario2
 Scenario: I search for student by UIN
   Given I am on the uin page
   And I fill in "uin" with "724004161"
-  And I click on "Search student by UIN" button
+  And I click on a "Search student by UIN" button
   Then I should be redirected to the results page 
   And I should see details of "Sagar"
   
@@ -27,5 +27,5 @@ Scenario: I search for student by UIN
 Scenario: I search for invalid student
   Given I am on the uin page
   And I fill in "uin" with "724"
-  And I click on "Search student by UIN" button
+  And I click on a "Search student by UIN" button
   Then I should see "No student with the UIN found"

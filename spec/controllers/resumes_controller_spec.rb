@@ -1,14 +1,5 @@
 require 'rails_helper'
-
 RSpec.describe ResumesController, type: :controller do
-
-#   describe "GET #index" do
-#     it "returns http success" do
-#       get :index
-#       expect(response).to have_http_status(:success)
-#     end
-#   end
-
   describe "GET #new" do
     it "returns http success" do
       get :new
@@ -24,10 +15,8 @@ RSpec.describe ResumesController, type: :controller do
   it "navigates to index page" do
     get :index
     expect(response).to have_http_status(:success)
-  
   end
-end
-    
+  end
   describe 'CREATE' do
     it "creates a new Resume" do
       expect{
@@ -40,33 +29,14 @@ end
       }.to change(Resume,:count).by(0)
     end
   end
-  
-  
   describe 'DELETE' do
     before :each do
       @rs = FactoryGirl.create(:resume,:name => "US23", :attachment => "CSCE",:uin=>"1234".to_i, :id =>'9')
     end
-  
     it "deletes the resume" do
       expect{
         delete :destroy, id: @rs     
       }.to change(Resume,:count).by(-1)
     end
-    
   end
-  
-#   describe "GET #create" do
-#     it "returns http success" do
-#       get :create
-#       expect(response).to have_http_status(:success)
-#     end
-#   end
-
-#   describe "GET #destroy" do
-#     it "returns http success" do
-#       get :destroy
-#       expect(response).to have_http_status(:success)
-#     end
-#   end
-
 end
