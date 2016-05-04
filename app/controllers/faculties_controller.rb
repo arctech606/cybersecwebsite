@@ -46,7 +46,11 @@ class FacultiesController < ApplicationController
     if  !session.key?(:faculty_id)
       redirect_to error_display_path
     end
-    if session[:faculty_id] and session[:faculty_id]!=params[:id]
+    @f=Faculty.find_by_name(params[:id])
+    if @f.class==NilClass
+     @f=Faculty.find_by_id(params[:id])
+    end
+    if session[:faculty_id] and session[:faculty_id]!=@f.id
       redirect_to error_display_path
     end
   end
