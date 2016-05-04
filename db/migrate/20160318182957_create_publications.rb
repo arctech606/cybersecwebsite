@@ -4,8 +4,6 @@ class CreatePublications < ActiveRecord::Migration
       t.string :name
       t.text :abstract
       t.string :keywords
-      t.references :faculty
-      t.references :student
       t.timestamps null: false
     end
   end

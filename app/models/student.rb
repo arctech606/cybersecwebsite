@@ -1,8 +1,8 @@
 class Student < ActiveRecord::Base
  validates :name, :dept, :desc , presence: { :message => "data not present" }
-  has_many :projects
-  has_many :publications
-  has_many :research_interests
+  has_and_belongs_to_many :projects
+  has_and_belongs_to_many :publications
+  has_and_belongs_to_many :research_interests, :join_table => "research_interests_students"
   has_and_belongs_to_many :faculties
   has_secure_password
   validates :password, length: { minimum: 6 }

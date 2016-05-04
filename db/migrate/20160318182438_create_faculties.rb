@@ -8,9 +8,6 @@ class CreateFaculties < ActiveRecord::Migration
       t.text :office
       t.string :phone_no
       t.string :email
-      t.references :research_interest
-      t.references :project
-      t.references :publication
       
       t.timestamps null: false
     end
