@@ -55,8 +55,11 @@ ActiveRecord::Schema.define(version: 20160504034717) do
     t.text     "office"
     t.string   "phone_no"
     t.string   "email"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.integer  "research_interest_id"
+    t.integer  "project_id"
+    t.integer  "publication_id"
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
     t.string   "password_digest"
     t.string   "remember_digest"
     t.integer  "uin"
@@ -106,9 +109,13 @@ ActiveRecord::Schema.define(version: 20160504034717) do
   add_index "focusareas_publications", ["publication_id"], name: "index_focusareas_publications_on_publication_id", using: :btree
 
   create_table "projects", force: :cascade do |t|
-    t.string "name"
-    t.string "sponsor"
-    t.text   "desc"
+    t.string   "name"
+    t.string   "sponsor"
+    t.text     "desc"
+    t.integer  "faculty_id"
+    t.integer  "student_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "projects_students", id: false, force: :cascade do |t|
@@ -123,6 +130,8 @@ ActiveRecord::Schema.define(version: 20160504034717) do
     t.string   "name"
     t.text     "abstract"
     t.string   "keywords"
+    t.integer  "faculty_id"
+    t.integer  "student_id"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.string   "publication_type"
@@ -162,8 +171,11 @@ ActiveRecord::Schema.define(version: 20160504034717) do
     t.string   "name"
     t.string   "dept"
     t.text     "desc"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
+    t.integer  "research_interest_id"
+    t.integer  "project_id"
+    t.integer  "publication_id"
     t.string   "email"
     t.string   "password_digest"
     t.string   "remember_digest"
