@@ -14,7 +14,7 @@ section {
 .headtitle h1{
   color:white;
   background-position: center;
-  background-image: url("tamucyberlogo.png");
+  background-image: image-url("tamucyberlogo.png");
   background-repeat: no-repeat;
   padding-top: 80px;
 }
@@ -41,10 +41,6 @@ section {
 .Directors_message{
   text-align: justify;
   width:70%;
-}
-
-.Directors_message_title{
-  
 }
 
 #error_explanation {
