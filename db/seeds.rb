@@ -311,3 +311,14 @@ Publication.create(:name=> "Seven Months with the Devils: A Long Term Study of C
 Publication.create(:name=> "Uipicker: User input privacy identification in mobile applications", :abstract=>"xyz",:keywords=>"Non Technical CD Issues",:publication_type => 'Journal Articles')
 Publication.create(:name=> "Uncovering Crowdsourced Manipulation of Online Reviews", :abstract=>"xyz",:keywords=>"Non Technical CD Issues",:publication_type => 'Journal Articles')
 
+@f=Student.create(:name => "Sagar",:dept => "CSCE",:desc => "help",:email => "ss@ss.com", :password => "new12345",:password_confirmation => "new12345",:uin=> 1234)
+@f1=Student.create(:name => "Sujoy",:dept => "CSCE",:desc => "help",:email => "ss1@ss.com", :password => "new12345",:password_confirmation => "new12345",:uin=> 1234)
+@f2=Student.create(:name => "Shweta",:dept => "CSCE",:desc => "help",:email => "ss2@ss.com", :password => "new12345",:password_confirmation => "new12345",:uin=> 1234)
+@f3=Student.create(:name => "Raja",:dept => "CSCE",:desc => "help",:email => "ss3@ss.com", :password => "new12345",:password_confirmation => "new12345",:uin=> 1234)
+@f4=Student.create(:name => "Ram",:dept => "CSCE",:desc => "help",:email => "ss4@ss.com", :password => "new12345",:password_confirmation => "new12345",:uin=> 1234)
+Faculty.find(1).students << [@f,@f1,@f2,@f3,@f4]
+
+Event.create(:name => "Cyber convention",:date => "12/3/2016",:desc => "A convention for students",:venue => "ETB building")
+Event.create(:name => "Cybersecurity seminar",:date => "12/4/2016",:desc => "A convention for students",:venue => "ETB building")
+Event.create(:name => "Cyberattack analysis",:date => "12/3/2016",:desc => "A convention for students",:venue => "ETB building")
+Event.create(:name => "Cyber convention",:date => "12/3/2016",:desc => "A convention for students",:venue => "ETB building")
